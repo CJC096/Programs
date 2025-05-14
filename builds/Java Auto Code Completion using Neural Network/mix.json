@@ -1,0 +1,1199 @@
+{
+  "intents": [
+    {
+      "tag": "greetings",
+      "patterns": ["hello", "hey", "hi", "good day", "what's up?", "how's it going?", "hello Monik.A.I."],
+      "responses": ["Hello!", "Hey!", "Hello! What can I do for you?"],
+      "context_set": ""
+    },
+    {
+      "tag": "farewell",
+      "patterns": ["goodbye", "cya", "farewell", "see ya", "I am leaving", "bye", "ciao", "have a nice day"],
+      "responses": ["OK. Goodbye!", "OK. See you!", "Bye-Bye!", "Farewell!"],
+      "context_set": ""
+    },
+    {
+      "tag": "age",
+      "patterns": ["how old", "How old are you?", "when were you created?", "what is your age?"],
+      "responses": ["I was created on June the 5th, 2023.", "I was made on the 5th of June, 2023.", "I was made on June 5, 2023."],
+      "context_set": ""
+    },
+    {
+      "tag": "name",
+      "patterns": ["what is your name", "what should I call you", "who are you", "tell me your name", "can you tell me your name?"],
+      "responses": ["You can call me Monik.A.I.", "I'm Monik.A.I.", "I'm Monik.A.I., the basic assistant of Mallory."],
+      "context_set": ""
+    },
+    {
+      "tag": "function",
+      "patterns": ["what do you do?", "what is your function?", "what can you do?"],
+      "responses": ["I am a basic Chatbot. As of now, I can display java codes."],
+      "context_set": ""
+    },
+    {
+      "tag": "help",
+      "patterns": ["help", "need assistance", "can you help me?", "I'm stuck", "I need guidance"],
+      "responses": ["Sure, I'll do my best to help you. Please let me know what you need assistance with."],
+      "context_set": ""
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["thank you", "thanks a lot", "thanks!", "thank you so much"],
+      "responses": ["You're welcome!", "Glad I could assist!", "No problem!"],
+      "context_set": ""
+    },
+    {
+      "tag": "code",
+      "patterns": ["HelloWorld", "Variables", "IfStatement", "ForLoop", "WhileLoop", "Arrays", "ArrayList", "HashMap", "Methods", "Classes", "Inheritance", "Interfaces", "Exceptions", "Threads", "CompletableFuture", "Streams", "SwitchStatement", "TryCatch", "CustomException", "LambdaExpression", "LocalDate", "MethodReference", "Enum", "ArrayListIteration", "HashSet", "StringBuilder", "FileRead", "FileWrite", "Serialization", "Deserialization", "RegexMatch", "RegexReplace", "InterfaceDefaultMethod", "FunctionalInterface", "MethodOverloading", "StaticImport", "VarKeyword", "Optional", "StringFormat", "FunctionalInterfaceLambda", "BiFunction", "WildcardGenerics", "MultipleBounds", "JDBCConnection", "JDBCCreateStatement", "JDBCResultSet", "JPACreateEntityManager", "JPACreateEntity", "JPACriteriaQuery", "JUnitTest", "MockitoMock", "SpringBootApplication", "SpringRestController", "SpringAutowired", "SpringJPARepository", "SpringDependencyInjection", "LambdaForEach", "LocalTime", "DateTimeFormatter", "FileReadLines", "FileWriteLines", "ThreadPoolExecutor", "LinkedHashMap", "PriorityQueue", "StringJoiner", "MethodReferenceStatic", "Deque", "CountDownLatch", "CyclicBarrier", "ScheduledExecutor", "Semaphore", "BoundedBuffer", "RecursiveTask", "CompletableFutureCombine", "CompletableFutureAsync", "CompletableFutureException", "CompletableFutureCompose", "CompletableFutureAllOf", "CompletableFutureAnyOf", "HTTPURLConnection", "SocketServer", "SocketClient", "SerializationExternalizable", "JavaFXApplication", "JavaFXFXML", "JavaFXEventHandling", "JavaFXCSS", "JavaFXAnimation", "JavaFXChart", "ObjectSerialization", "JDBCConnection", "JUnitTest", "JavaFXMediaPlayer", "JavaFXWebview", "BasicAuthentication", "RESTClientGet", "RESTClientPost", "JavaFXWebView", "JavaFXCSSStyling", "JavaFXDialog", "JavaFXListView", "JavaFXTableView"],
+      "responses": ["Sure! Here's an example of a code for that:\n", "Here's an example of the code:\n", "Here's some code for that:\n"],
+      "context_set": "code"
+    },
+    {
+      "tag": "default",
+      "patterns": ["", "ok", "yes", "no"],
+      "responses": ["I'm sorry, I'm not sure I understand.", "Could you please rephrase that?", "I'm afraid I don't have the information you're looking for."],
+      "context_set": ""
+    }
+  ],
+  "code": [
+  {
+    "tag": "HelloWorld",
+    "patterns": ["HelloWorld", "Hello World", "Print Statement"],
+    "responses": ["public class HelloWorld {\n\tpublic static void main(String[] args) {\n\t\tSystem.out.print(\"Hello, World!\");\n\t}\n}"],
+    "explanations": [
+        "This Java program is a classic introductory example known as the \"Hello World\" program. It serves as a basic starting point for learning any programming language. In this code, a class named HelloWorld is defined, and it contains a main method. The main method is the entry point of the program, where execution begins. Inside the main method, the System.out.print statement is used to display the message \"Hello, World!\" to the console. When the program is run, it will print this message.",
+        "The public class HelloWorld line indicates that a class named HelloWorld is being defined. This class contains the public static void main(String[] args) method. This method is a special one in Java; it's the starting point of execution for any Java program. Within this method, the System.out.print statement is used to output the string \"Hello, World!\" to the console. This means that when the program is executed, this message will be displayed.",
+        "In this Java code, a class named HelloWorld is declared. Inside this class, there is a main method, which is the entry point for the program. When the program starts, the code within the main method is executed. Here, the System.out.print statement is used to display the message \"Hello, World!\" to the console. The System.out.print method is responsible for outputting text. In this case, it outputs the specified message. This is why, when you run this program, you'll see \"Hello, World!\" printed on the screen."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "Variables",
+    "patterns": ["Variables"],
+    "responses": ["public class Variables {\n\tpublic static void main(String[] args){\n\t\t// Integer Variable\n\t\tint age = 30;\n\t\t// String Variable\n\t\tString name = \"Alice\";\n\t\t// Char Variable\n\t\tchar grade = 'A';\n\t\t// Double Variable\n\t\tdouble height = 6.2;\n\t\t// Boolean Variable\n\t\tboolean isStudent = true;\n\t\t// Float Variable\n\t\tfloat weight = 65.5f;\n\t\t// Long Variable\n\t\tLong population = 7895461230L;\n\t\t// Short Variable\n\t\tshort distance = 32000;\n\t\t// Byte variable\n\t\tbyte level = 5;\n\t\t// Print all variables\n\t\tSystem.out.println(\"age: \" + age + \", name: \" + name + \", grade: \" + grade + \", height: \" + height + \", isStudent: \" + isStudent + \", weight: \" + weight + \", population: \" + population + \", distance: \" + distance + \", level: \" + level);\n\t}\n}"],
+    "explanations": [
+      "This Java program demonstrates the use of different variable types, including integers, strings, doubles, booleans, characters, and arrays. It initializes these variables with specific values and then prints them to the console.",
+      "Each variable type serves a different purpose: int for whole numbers, String for text, double for decimal numbers, boolean for true/false values, char for single characters, and int[] for an array of integers.",
+      "The program showcases how to declare and assign values to variables"
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "IfStatement",
+    "patterns": ["IfStatement", "If Statement"],
+    "responses": ["public class IfStatement {\n\tpublic static void main (String[]args){\n\t\tint x = 5;\n\t\tif (x > 0) {\n\t\t\tSystem.out.println(\"x is positive\");\n\t\t} else if (x == 0) {\n\t\t\tSystem.out.println(\"x is zero\");\n\t\t} else {\n\t\t\tSystem.out.println(\"x is negative\");\n\t\t}\n\t}\n}"],
+    "explanations": [
+      "This Java code demonstrates an \"if-else\" statement. It starts by initializing a variable x with the value 5. The program then checks the value of x. If x is greater than 0, it prints \"x is positive\". If x is equal to 0, it prints \"x is zero\". If neither condition is met (meaning x is negative), it prints \"x is negative\".",
+      "The if-else statement is a fundamental control structure in programming. It allows a program to make decisions based on conditions. In this example, the code checks the value of x and executes the corresponding block of code depending on whether the condition is true or false.",
+      "The indentation (represented by \"\\t\") is essential in Java for structuring the code. It visually organizes which block of code belongs to which part of the if-else statement. The code inside each branch is indented to make it clear which statements are executed when a certain condition is met."
+
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "ForLoop",
+    "patterns": ["ForLoop", "For Loop"],
+    "responses": ["public class ForLoop {\n\tpublic static void main(String [] args){\n\t\tfor (int i = 0; i < 5; i++) {\n\t\t\tSystem.out.println(i);\n\t\t}\n\t}\n}"],
+    "explanations": [
+      "This Java code snippet demonstrates a for loop. In the loop's initialization, int i = 0; initializes a variable i to 0. i < 5; sets the loop's condition, which means the loop will run as long as i is less than 5. i++ is the update expression, which increments i by 1 after each iteration.\nThe code inside the loop, System.out.println(i);, prints the value of i to the console. As the loop iterates, it prints the numbers 0 through 4.",
+      "The for loop is a control structure in Java that allows you to execute a block of code repeatedly. It's commonly used when you know in advance how many times you want to execute a block of code.\nIn this example, the loop initializes a counter variable i with an initial value of 0. It then checks if i is less than 5. If this condition is true, it executes the code inside the loop. After each execution, it increments i by 1 (i++).\nThe loop continues until i is no longer less than 5.",
+      "This for loop in Java is designed to iterate over a range of numbers. The loop starts with int i = 0;, which initializes a counter variable i to 0. The condition i < 5; checks if i is less than 5. If true, the loop body is executed, which contains System.out.println(i);. This prints the current value of i.\nAfter each iteration, i++ is executed, which increments the value of i by 1. The loop continues until i is no longer less than 5, at which point the program moves to the next statement after the loop."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "WhileLoop",
+    "patterns": ["WhileLoop", "While Loop"],
+    "responses": ["public class WhileLoop {\n\tpublic static void main(String [] args){\n\t\tint count = 0;\n\t\twhile (count < 5) {\n\t\t\tSystem.out.println(count);\n\t\t\tcount++;\n\t\t}\n\t}\n}"],
+    "explanations": [
+      "This Java program demonstrates a while loop. In the loop, a variable count is initialized to 0. The loop condition checks if count is less than 5. As long as this condition is true, the code inside the loop is executed. In each iteration, count is printed, and then it is incremented by 1. This continues until count is no longer less than 5.",
+      "The while loop is a control structure that repeatedly executes a block of code while a specified condition is true. In this example, the condition count < 5 ensures that the loop will continue as long as count is less than 5. This allows the program to perform a specific task multiple times, providing flexibility in handling repetitive tasks.",
+      "The int count = 0; initializes a variable count to 0. The while (count < 5) sets up the loop, indicating that the code block inside the loop will be executed as long as count is less than 5. Inside the loop, System.out.println(count); prints the current value of count. After each iteration, count++ increments count by 1. This loop structure ensures that the code block will be executed up to a maximum of five times, producing the numbers 0 to 4 as output."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "Arrays",
+    "patterns": ["Arrays", "Array"],
+    "responses": ["public class Arrays {\n\tpublic static void main(String[] args) {\n\t\tint[] numbers = {1, 2, 3, 4, 5};\n\t\tString[] fruits = {\"Apple\", \"Banana\", \"Orange\"};\n\t\t// Print the numbers array\n\t\tSystem.out.print(\"Numbers: \");\n\t\tprintIntArray(numbers);\n\t\t// Print the fruits array\n\t\tSystem.out.print(\"Fruits: \");\n\t\tprintStringArray(fruits);\n\t}\n\t// Method to print an int array\n\tpublic static void printIntArray(int[] arr) {\n\t\tfor (int num : arr) {\n\t\t\tSystem.out.print(num + \" \");\n\t\t}\n\t\tSystem.out.println();\n\t}\n\t// Method to print a String array\n\tpublic static void printStringArray(String[] arr) {\n\t\tfor (String fruit : arr) {\n\t\t\tSystem.out.print(fruit + \" \");\n\t\t}\n\t\tSystem.out.println();\n\t}\n}"],
+    "explanations": [
+      "This Java code snippet demonstrates the creation and initialization of an integer array named numbers. The array contains the values 1, 2, 3, 4, and 5. Arrays are used to store collections of data of the same type. In this case, it's an array of integers.",
+      "The line int[] numbers = {1, 2, 3, 4, 5}; declares an integer array named numbers and initializes it with five elements: 1, 2, 3, 4, and 5. The square brackets [] denote that it's an array, and int specifies the data type of the elements.",
+      "In Java, arrays are indexed starting from 0, which means the first element is accessed as numbers[0], the second as numbers[1], and so on. This array contains integers, but arrays can hold other types of data like strings, doubles, or custom objects."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "ArrayList",
+    "patterns": ["ArrayList", "Array List"],
+    "responses": ["import java.util.ArrayList;\nimport java.util.List;\npublic class MyArrayList {\n\tpublic static void main(String[] args) {\n\t\tList<String> list = new ArrayList<>(List.of(\"Apple\", \"Banana\", \"Orange\"));\n\t\tSystem.out.println(list);\n\t}\n}\n"],
+    "explanations": [
+      "In Java, an ArrayList is a dynamic data structure that can store a collection of elements. It can grow or shrink in size as needed. In this code snippet, we import the necessary classes and create an ArrayList named list that can hold strings. We then add three strings: \"Apple\", \"Banana\", and \"Orange\" to the list.",
+      "The line import java.util.ArrayList; brings in the ArrayList class from the Java Utilities library. ArrayList provides methods to add, remove, and manipulate elements efficiently. In this example, we create an ArrayList called list that can store strings. We then use list.add() to insert three fruits into the list.",
+      "An ArrayList is similar to an array, but it's more flexible as it can change size dynamically. In this code, we first import the necessary classes for ArrayList. Then, we create a new ArrayList called list that can hold strings. We use list.add(\"Apple\"), list.add(\"Banana\"), and list.add(\"Orange\") to add these fruits to the list."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "HashMap",
+    "patterns": ["HashMap", "Hash Map"],
+    "responses": ["import java.util.HashMap;\nimport java.util.Map;\npublic class HashMap {\n\tpublic static void main(String[] args) {\n\t\tString[] names = {\"Alice\", \"Bob\"};\n\t\tint[] ages = {25, 30};\n\t\tMap<String, Integer> map = new HashMap<>();\n\t\tfor (int i = 0; i < names.length; i++) {\n\t\t\tmap.put(names[i], ages[i]);\n\t\t}\n\t\t// Now you can use the map as before\n\t\tSystem.out.println(map);\n\t}\n}"],
+    "explanations": [
+      "This Java code introduces a HashMap, which is a data structure that stores key-value pairs. In this example, a HashMap named map is created to associate names with ages.\nThe line import java.util.HashMap; is used to import the necessary Java library for HashMap.\nMap<String, Integer> map = new HashMap<>(); initializes a HashMap where keys are of type String (representing names) and values are of type Integer (representing ages).\nmap.put(\"Alice\", 25); and map.put(\"Bob\", 30); add key-value pairs to the HashMap. In this case, \"Alice\" is associated with the value 25 and \"Bob\" is associated with the value 30",
+      "The HashMap allows for efficient retrieval of values based on their corresponding keys. In this code, if you want to find the age of \"Alice\", you would use int aliceAge = map.get(\"Alice\"); which would assign 25 to aliceAge.\nHashMaps are commonly used to represent relationships or mappings between different pieces of data. For example, in a database, a HashMap could be used to associate a person's name with their contact information.",
+      "The HashMap provides a powerful tool for quick look-up of information. It is useful when you have a large dataset and need to quickly retrieve specific pieces of information.\nIn this code, the HashMap is designed to handle names and ages, but HashMaps can be adapted to a wide range of applications where there's a need for efficient retrieval of data based on a unique identifier (the key)."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "Methods",
+    "patterns": ["Methods", "Method"],
+    "responses": ["public class Methods {\n\tpublic static int add(int a, int b) {\n\t\treturn a + b; \n\t}\n\tpublic static void main(String[] args) {\n\t\tint result = add(5, 3);\n\t\tSystem.out.println(result);\n\t}\n}\n"],
+    "explanations": [
+      "In Java, a method is a block of code that performs a specific task. In this example, there's a method named add that takes two integer parameters (a and b) and returns their sum. The return statement is used to send the result back to where the method was called.",
+      "Methods allow us to encapsulate functionality into reusable blocks of code. Here, the add method simplifies the process of adding two numbers. It takes inputs (a and b), processes them, and provides an output.",
+      "Once the method add is defined, it can be called elsewhere in the program. In this case, int result = add(5, 3); calls the add method with the arguments 5 and 3, and assigns the returned value (8) to the variable result."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "Classes",
+    "patterns": ["Classes", "Class"],
+    "responses": ["public class Person {\n\tprivate String name;\n\n\tpublic Person(String name) {\n\t\tthis.name = name;\n\t}\n\n\tpublic String getName() {\n\t\treturn name;\n\t}\n}\n"],
+    "explanations": [
+      "his Java code defines a class named Person. A class is like a blueprint that describes the properties and behaviors of objects. In this case, the class has a single property name and a method getName.\nThe private String name; line declares a private variable named name. It means that it can only be accessed within the class itself.\nThe public Person(String name) is a constructor. It's a special method used to initialize objects when they are created. This constructor takes a name parameter and assigns it to the name property of the object.\nThe public String getName() is a method that returns the value of the name property. Methods are functions associated with a class that perform actions or provide information about the object.",
+      "The public class Person { ... } line is the class definition. It encapsulates properties (like name) and behaviors (like getName) related to a person.\nThe private String name; line uses the access modifier private, which means that the name property can only be accessed within the Person class. This is a form of data encapsulation, ensuring that the name is not directly accessible from outside the class.\nThe public Person(String name) method is a constructor. It allows you to create a new Person object and initialize its name property with a specific value.",
+      "The public String getName() method is a getter method. It allows other parts of the program to retrieve the value of the name property. This is useful for accessing information about a Person object without directly manipulating its name.\nThis class serves as a template for creating Person objects. Each Person object will have its own name property, and you can use the getName method to retrieve it.\nIn other parts of the program, you can create instances of the Person class using code like Person person1 = new Person(\"John\");. This creates a new Person object with the name \"John\"."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "Inheritance",
+    "patterns": ["Inheritance"],
+    "responses": ["public class Student extends Person {\n\tprivate int studentId;\n\tpublic Student(String name, int studentId) {\n\t\tsuper(name);\n\t\tthis.studentId = studentId;\n\t}\n}\n"],
+    "explanations": [
+      "This example demonstrates inheritance in object-oriented programming. The class 'Student' extends the 'Person' class, inheriting its properties and methods. It also adds an additional field 'studentId' and a constructor to initialize it.",
+      "Inheritance allows a class to inherit attributes and behaviors from another class. In this case, 'Student' inherits from 'Person', which means it can use the methods and fields defined in 'Person'.",
+      "By extending the 'Person' class, the 'Student' class can reuse existing code while adding specific functionalities or properties. This promotes code reuse and helps in organizing related classes."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "Interfaces",
+    "patterns": ["Interfaces", "Interface"],
+    "responses": ["public interface Shape {\n\tdouble getArea();\n\tdouble getPerimeter();\n}\npublic class Circle implements Shape {\n\tprivate double radius;\n\tpublic Circle(double radius) {\n\t\tthis.radius = radius;\n\t}\n\t@Override\n\tpublic double getArea() {\n\t\treturn Math.PI * Math.pow(radius, 2);\n\t}\n\t@Override\n\tpublic double getPerimeter() {\n\t\treturn 2 * Math.PI * radius;\n\t}\n}\n"],
+    "explanations": [
+      "This snippet showcases the concept of interfaces in Java. The 'Shape' interface defines two methods: 'getArea()' and 'getPerimeter()'. Any class that implements 'Shape' must provide implementations for these methods.",
+      "Interfaces define a contract that classes must adhere to. In this case, 'Circle' implements the 'Shape' interface, meaning it must provide concrete implementations for 'getArea()' and 'getPerimeter()'.",
+      "Interfaces allow classes to share a common set of methods without enforcing a specific class hierarchy. This promotes flexibility and supports multiple inheritance of behaviors."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "Exceptions",
+    "patterns": ["Exceptions", "Exception"],
+    "responses": ["public class Exception {\n\tpublic static void main(String[] args) {\n\t\ttry {\n\t\t\tint result = divide(10, 0);\n\t\t\tSystem.out.println(\"Result: \" + result);\n\t\t} catch (ArithmeticException e) {\n\t\t\tSystem.out.println(\"Error: Division by zero\");\n\n\t\t}\n\t}\n\tpublic static int divide(int num1, int num2) throws ArithmeticException {\n\t\tif (num2 == 0) {\n\t\t\tthrow new ArithmeticException(\"Division by zero\");\n\t\t}\n\t\treturn num1 / num2;\n\t}\n}"],
+    "explanations": [
+      "This example demonstrates exception handling in Java. The code attempts to divide 5 by 0, which is not allowed, causing an 'ArithmeticException' to be thrown.",
+      "The 'try' block encloses the potentially risky code, and the 'catch' block handles the exception. In this case, the 'ArithmeticException' is caught, and a user-friendly error message is printed.",
+      "Exception handling prevents program crashes by allowing developers to gracefully handle unexpected issues. It promotes robustness and reliability in software."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "Threads",
+    "patterns": ["Threads", "Thread"],
+    "responses": ["import java.util.concurrent.atomic.AtomicInteger;\nimport java.util.concurrent.Phaser;\npublic class Threads {\n\tpublic static void main(String[] args) {\n\t\tfinal int THREAD_COUNT = 5;\n\t\tPhaser phaser = new Phaser(1);\n\t\tfor (int i = 0; i < THREAD_COUNT; i++) {\n\t\t\tnew Thread(() -> {\n\t\t\t\tphaser.arriveAndAwaitAdvance();\n\t\t\t\tSystem.out.println(\"Thread \" + Thread.currentThread().getId() + \" executed.\");\n\t\t\t}).start();\n\t\t}\n\t\tphaser.arriveAndDeregister();\n\t}\n}\n"],
+    "explanations": [
+      "This code snippet demonstrates multi-threading using Java's 'Phaser' class. It creates and starts multiple threads that synchronize using the phaser to execute concurrently.",
+      "The 'Phaser' class helps coordinate threads by synchronizing them at various phases. Threads wait at 'phaser.arriveAndAwaitAdvance()' until all threads have reached that point, and then they proceed.",
+      "Multi-threading enables parallel execution, potentially improving performance. However, proper synchronization mechanisms like 'Phaser' are crucial to avoid race conditions and ensure correct behavior."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "CompletableFuture",
+    "patterns": ["CompletableFuture", "Completable Future"],
+    "responses": ["import java.util.concurrent.CompletableFuture;\nimport java.util.concurrent.ExecutionException;9u\npublic class CompletableFuture {\n\tpublic static void main(String[] args) {\n\t\tCompletableFuture<String> future = CompletableFuture.supplyAsync(() -> {\n\t\ttry {\n\t\t\tThread.sleep(1000);\n\t\t} catch (InterruptedException e) {\n\t\t\te.printStackTrace();\n\t\t}\n\t\treturn \"Task completed!\";\n\t\t});\n\t\ttry {\n\t\t\tString result = future.get();\n\t\t} catch (InterruptedException | ExecutionException e) {\n\t\t\te.printStackTrace();\n\t\t}\n\t}\n}\n"],
+    "explanations": [
+      "This code showcases the use of Java's 'CompletableFuture' for asynchronous programming. It defines a future that executes a task asynchronously and then waits for its completion.",
+      "The 'supplyAsync' method schedules the task for execution asynchronously. In this case, it simulates a time-consuming operation with 'Thread.sleep(1000)' and returns a result.",
+      "By using 'CompletableFuture', developers can write non-blocking, async code that improves resource utilization. Handling results and exceptions after asynchronous tasks complete is essential."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "Streams",
+    "patterns": ["Streams", "Stream"],
+    "responses": ["import java.util.Arrays;\nimport java.util.List;\nimport java.util.stream.Collectors;\npublic class Stream {\n\tpublic static void main(String[] args) {\n\t\tList<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);\n\t\tList<Integer> doubledNumbers = numbers.stream()\n\t\t\t.map(n -> n * 2)\n\t\t\t.collect(Collectors.toList());\n\t\t// Using streams to print the doubled numbers\n\t\tdoubledNumbers.stream()\n\t\t\t.forEach(System.out::println);\n\t}\n}\n"],
+    "explanations": [
+      "This code demonstrates the use of Java Streams to process a list of numbers.",
+      "The `map` function transforms each element by doubling it using the lambda expression `n -> n * 2`.",
+      "The `collect` method gathers the transformed elements into a new list."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "SwitchStatement",
+    "patterns": ["SwitchStatement", "Switch Statement", "Switch Case"],
+    "responses": ["public class SwitchStatement {\n\tpublic static void main(String[] args) {\n\tint day = 1;\n\t\tswitch (day) {\n\t\t\tcase 1:\n\t\t\t\tSystem.out.println(\"Monday\");\n\t\t\t\tbreak;\n\t\t\tcase 2:\n\t\t\t\tSystem.out.println(\"Tuesday\");\n\t\t\t\tbreak;\n\t\t\tdefault:\n\t\t\t\tSystem.out.println(\"Other day\");\n\t\t}\n\t}\n}"],
+    "explanations": [
+      "This code demonstrates the use of a switch statement in Java.",
+      "It checks the value of the variable 'day' and prints a corresponding message.",
+      "The `break` statements prevent fall-through to the next case."
+      ],
+    "context_set": "code"
+  },
+  {
+    "tag": "TryCatch",
+    "patterns": ["TryCatch", "Try Catch"],
+    "responses": ["public class Exception {\n\tpublic static void main(String[] args) {\n\t\ttry {\n\t\t\tint result = 5 / 0;\n\t\t} catch (ArithmeticException e) {\n\t\t\tSystem.out.println(\"Error: Division by zero.\");\n\t\t}\n\t}\n}"],
+    "explanations": [
+      "This code demonstrates exception handling in Java using a try-catch block.",
+      "It attempts to perform a division by zero, which throws an ArithmeticException.",
+      "The catch block catches the exception and prints an error message."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "CustomException",
+    "patterns": ["CustomException", "Custom Exception"],
+    "responses": ["import java.lang.Exception;\npublic class CustomException {\n\tpublic static void main(String[] args) {\\n\t\ttry {\n\t\t\tthrow new CustomException(\"This is a custom exception.\");\n\t\t} catch (CustomException e) {\n\t\t\tSystem.out.println(\"Caught custom exception: \" + e.getMessage());\n\t\t} catch (Exception e) {\n\t\t\tSystem.out.println(\"Caught general exception: \" + e.getMessage());\n\t\t}\n\t}\n}"],
+    "explanations": [
+      "This code defines a custom exception class in Java.",
+      "The class 'CustomException' extends the built-in 'Exception' class.",
+      "It has a constructor to set the exception message using the 'super' keyword."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "LambdaExpression",
+    "patterns": ["LambdaExpression", "Lambda Expression"],
+    "responses": ["public class LambdaExpression {\n\tpublic static void main(String[] args) {\n\t\t// Define a lambda expression for a simple addition operation\n\t\tCalculator add = (a, b) -> a + b;\n\t\t// Use the lambda expression to perform addition\n\t\tint result = add.calculate(5, 3);\n\t\tSystem.out.println(\"Result of addition: \" + result);\n\t}\n}\n// Functional interface with a single abstract method\ninterface Calculator {\n\tint calculate(int a, int b);\n}\n"],
+    "explanations": [
+      "This code demonstrates the use of lambda expressions and the forEach method in Java Streams.",
+      "It iterates through the 'numbers' list and applies the lambda expression to each element.",
+      "The lambda expression here prints each element to the console."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "LocalDate",
+    "patterns": ["LocalDate", "Local Date"],
+    "responses": ["import java.time.LocalDate;\npublic class Date {\n\tpublic static void main(String[] args) {\n\t\t// Get the current date\n\t\tLocalDate currentDate = LocalDate.now();\n\t\t// Display the current date\n\t\tSystem.out.println(\"Current Date: \" + currentDate);\n\t}\n}\n"],
+    "explanations": [
+      "This code imports the `LocalDate` class from the `java.time` package.",
+      "It creates an instance of `LocalDate` named `currentDate` representing the current date.",
+      "The `LocalDate.now()` method is used to get the current date."
+      ],
+    "context_set": "code"
+  },
+  {
+    "tag": "MethodReference",
+    "patterns": ["MethodReference", "Method Reference"],
+    "responses": ["import java.util.Arrays;\npublic class MethodReference {\n\tpublic static void main(String[] args) {\n\t\t// Create an array of strings\n\t\tString[] names = {\"Alice\", \"Bob\", \"Charlie\", \"David\", \"Eva\"};\n\t\t// Using Arrays.sort() with lambda expression\n\t\tArrays.sort(names, (s1, s2) -> s1.compareTo(s2));\n\t\tSystem.out.println(\"Sorted using lambda expression: \" + Arrays.toString(names));\n\t\t// Using Arrays.sort() with method reference to String's compareTo method\n\t\tArrays.sort(names, String::compareTo);\n\t\tSystem.out.println(\"Sorted using method reference: \" + Arrays.toString(names));\n\t}\n}"],
+    "explanations": [
+      "This code creates a list of integers named `numbers` with values 1 through 5.",
+      "The `forEach` method is used to iterate through each element of the list.",
+      "The `System.out::println` method reference is used to print each element."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "Enum",
+    "patterns": ["Enum"],
+    "responses": ["public class Enum {\n\t// Enum declaration\n\tenum Day {\n\t\tMONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY\n\t}\n\tpublic static void main(String[] args) {\n\t\t// Using the enum values\n\t\tDay today = Day.MONDAY;\n\t\t// Switch statement with enum\n\t\tswitch (today) {\n\t\t\tcase MONDAY:\n\t\t\t\tSystem.out.println(\"It's Monday!\");\n\t\t\t\tbreak;\n\t\t\tcase TUESDAY:\n\t\t\t\tSystem.out.println(\"It's Tuesday!\");\n\t\t\t\tbreak;\n\t\t\tcase WEDNESDAY:\n\t\t\t\tSystem.out.println(\"It's Wednesday!\");\n\t\t\t\tbreak;\n\t\t\tcase THURSDAY:\n\t\t\t\tSystem.out.println(\"It's Thursday!\");\n\t\t\t\tbreak;\n\t\t\tcase FRIDAY:\n\t\t\t\tSystem.out.println(\"It's Friday!\");\n\t\t\t\tbreak;\n\t\t\tcase SATURDAY:\n\t\t\t\tSystem.out.println(\"It's Saturday!\");\n\t\t\t\tbreak;\n\t\t\tcase SUNDAY:\n\t\t\t\tSystem.out.println(\"It's Sunday!\");\n\t\t\t\tbreak;\n\t\t\tdefault:\n\t\t\t\tSystem.out.println(\"Invalid day!\");\n\t\t}\n\t}\n}"],
+    "explanations": [
+      "This code defines an enum named `Day` with seven constants representing days of the week.",
+      "The constants are named `MONDAY`, `TUESDAY`, etc.",
+      "Enums are used to represent a fixed set of values, in this case, days of the week."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "ArrayListIteration",
+    "patterns": ["ArrayListIteration", "Array List Iteration"],
+    "responses": ["import java.util.ArrayList;\nimport java.util.Iterator;\npublic class ArrayListIteration {\n\tpublic static void main(String[] args) {\n\t\t// Creating an ArrayList of Strings\n\t\tArrayList<String> myList = new ArrayList<>();\n\t\t// Adding elements to the ArrayList\n\t\tmyList.add(\"Apple\");\n\t\tmyList.add(\"Banana\");\n\t\tmyList.add(\"Orange\");\n\t\tmyList.add(\"Grapes\");\n\t\t// Using Iterator to iterate over the elements\n\t\tSystem.out.println(\"Iterating over the elements using Iterator:\");\n\t\tIterator<String> iterator = myList.iterator()\n\t\twhile (iterator.hasNext()) {\n\t\t\tString element = iterator.next();\n\t\t\tSystem.out.println(element);\n\t\t}\n\t\t// Alternatively, you can use a for-each loop to iterate over the elements\n\t\tSystem.out.println(\"\nIterating over the elements using for-each loop:\");\n\t\tfor (String element : myList) {\n\t\t\tSystem.out.println(element);\n\t\t}\n\t}\n}"],
+    "explanations": [
+      "This code creates a list of strings named `names` containing three names.",
+      "The `for-each` loop is used to iterate through each element of the list.",
+      "The `System.out.println(name)` line prints each name in the list."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "HashSet",
+    "patterns": ["HashSet", "Hash Set"],
+    "responses": ["import java.util.HashSet;\npublic class HashSet {\n\tpublic static void main(String[] args) {\n\t\t// Create a HashSet to store integers\n\t\tHashSet<Integer> numberSet = new HashSet<>();\n\t\t// Adding elements to the HashSet\n\t\tnumberSet.add(10);\n\t\tnumberSet.add(20);\n\t\tnumberSet.add(30);\n\t\tnumberSet.add(40);\n\t\tnumberSet.add(50);\n\t\t// Display the elements of the HashSet\n\t\tSystem.out.println(\"HashSet elements: \" + numberSet);\n\t\t// Check if a specific element is present\n\t\tint searchNumber = 30;\n\t\tif (numberSet.contains(searchNumber)) {\n\t\t\tSystem.out.println(searchNumber + \" is present in the HashSet.\");\n\t\t} else {\n\t\t\tSystem.out.println(searchNumber + \" is not present in the HashSet.\");\n\t\t}\n\t\t// Remove an element from the HashSet\n\t\tint removeNumber = 40;\n\t\tif (numberSet.remove(removeNumber)) {\n\t\t\tSystem.out.println(removeNumber + \" has been removed from the HashSet.\");\n\t\t} else {\n\t\t\tSystem.out.println(removeNumber + \" is not present in the HashSet.\");\n\t\t}\n\t\t// Display the updated elements of the HashSet\n\t\tSystem.out.println(\"Updated HashSet elements: \" + numberSet);\n\t}\n}"],
+    "explanations": [
+      "This code imports the `HashSet` class and the `Set` interface from the `java.util` package.",
+      "A `HashSet` named `set` is created to store strings.",
+      "Three strings, \"Apple\", \"Banana\", and \"Orange\", are added to the set using the `add` method."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "StringBuilder",
+    "patterns": ["StringBuilder", "String Builder"],
+    "responses": ["public class StringBuilder {\n\tpublic static void main(String[] args) {\n\t\t// Creating a StringBuilder\n\t\tStringBuilder stringBuilder = new StringBuilder();\n\t\t// Appending strings\n\t\tstringBuilder.append(\"Hello, \");\n\t\tstringBuilder.append(\"StringBuilder!\");\n\t\tSystem.out.println(\"Appended String: \" + stringBuilder.toString());\n\n\t\t// Inserting into the middle\n\t\tstringBuilder.insert(7, \"Awesome \");\n\t\tSystem.out.println(\"After Insertion: \" + stringBuilder.toString());\n\t\t// Deleting a portion\n\t\tstringBuilder.delete(7, 15);\n\t\tSystem.out.println(\"After Deletion: \" + stringBuilder.toString());\n\t\t// Updating a character\n\t\tstringBuilder.setCharAt(7, 'S');\n\t\tSystem.out.println(\"After Update: \" + stringBuilder.toString());\n\t\t// Reversing the string\n\t\tstringBuilder.reverse();\n\t\tSystem.out.println(\"Reversed String: \" + stringBuilder.toString());\n\t}\n}"],
+    "explanations": [
+      "A StringBuilder is used to efficiently manipulate strings without creating multiple string objects. It provides methods like append() to add strings, enhancing performance when dealing with concatenation.",
+      "The code initializes a StringBuilder, appends 'Hello, ' and 'World!' to it, and then converts it to a single string. This approach is more efficient than using string concatenation directly.",
+      "StringBuilder is mutable, allowing efficient modification of strings. The example creates a message by appending parts, reducing memory overhead and time complexity."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "FileRead",
+    "patterns": ["FileRead", "File Read"],
+    "responses": ["import java.io.BufferedReader;\nimport java.io.FileReader;\nimport java.io.IOException;\npublic class ReadFile {\n\tpublic static void main(String[] args) {\n\t\t// Specify the path to your text file\n\t\tString filePath = \"path/to/your/textfile.txt\";\n\t\ttry (FileReader fileReader = new FileReader(filePath);\n\t\t\tBufferedReader bufferedReader = new BufferedReader(fileReader)) {\n\n\t\t\tString line;\n\t\t\twhile ((line = bufferedReader.readLine()) != null) {\n\t\t\t\tSystem.out.println(line);\n\t\t\t}\n\t\t} catch (IOException e) {\n\t\t\tSystem.err.println(\"Error reading the file: \" + e.getMessage());\n\t\t}\n\t}\n}"],
+    "explanations": [
+      "This code demonstrates reading a text file using BufferedReader. It opens the file, reads it line by line, and prints each line to the console.",
+      "The example uses a BufferedReader to efficiently read the contents of 'file.txt'. It reads and prints each line until the end of the file is reached.",
+      "BufferedReader efficiently reads characters from a file using buffering mechanisms. It's used here to read and display the contents of a file line by line."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "FileWrite",
+    "patterns": ["FileWrite", "File Write"],
+    "responses": ["import java.io.FileWriter;\nimport java.io.IOException;\npublic class FileWriter {\n\tpublic static void main(String[] args) {\n\t\t// Specify the file path\n\t\tString filePath = \"output.txt\";\n\t\t// The content to be written to the file\n\t\tString content = \"Hello, FileWriter!\";\n\t\ttry {\n\t\t\t// Create a FileWriter object with the specified file path\n\t\t\tFileWriter fileWriter = new FileWriter(filePath);\n\t\t\t// Write the content to the file\n\t\t\tfileWriter.write(content);\n\t\t\t// Close the FileWriter to release system resources\n\t\t\tfileWriter.close();\n\t\t\tSystem.out.println(\"Content has been written to the file.\");\n\t\t} catch (IOException e) {\n\t\t\t// Handle potential IO exceptions\n\t\t\te.printStackTrace();\n\t\t}\n\t}\n}\n"],
+    "explanations": [
+      "This code showcases writing to a file using BufferedWriter. It opens the file, writes the specified content ('Hello, World!'), and then closes the writer.",
+      "BufferedWriter is used to efficiently write characters to a file. It's used here to write 'Hello, World!' to 'file.txt'.",
+      "The code snippet utilizes BufferedWriter to write the string 'Hello, World!' to a file named 'file.txt'. The writer is automatically closed after use."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "Serialization",
+    "patterns": ["Serialization"],
+    "responses": ["import java.io.*;\nclass Student implements Serializable {\n\tprivate static final long serialVersionUID = 1L;\n\tprivate String name;\n\tprivate int age;\n\tpublic Student(String name, int age) {\n\t\tthis.name = name;\n\t\tthis.age = age;n\t}\n\t@Override\n\tpublic String toString() {\n\t\treturn \"Student [name=\" + name + \", age=\" + age + \"]\";\n\t}\n}\npublic class Serialization {\n\tpublic static void main(String[] args) {\n\t\t// Creating a Student object\n\t\tStudent student = new Student(\"John Doe\", 20);\n\t\t// Serialization\n\t\tserializeObject(student, \"student.ser\");\n\t\t// Deserialization\n\t\tStudent deserializedStudent = (Student) deserializeObject(\"student.ser\");\n\t\t// Displaying the deserialized object\n\t\tSystem.out.println(\"Deserialized Student: \" + deserializedStudent);\n\t}\n\t// Method to serialize an object and save it to a file\n\tprivate static void serializeObject(Object obj, String filename) {\n\t\ttry (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(filename))) {\n\t\t\toos.writeObject(obj);\n\t\t\tSystem.out.println(\"Object serialized and saved to \" + filename);\n\t\t} catch (IOException e) {\n\t\t\te.printStackTrace();\n\t\t}\n\t}\n\t// Method to deserialize an object from a file\n\tprivate static Object deserializeObject(String filename) {\n\t\tObject obj = null;\n\t\ttry (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(filename))) {\n\t\t\tobj = ois.readObject();\n\t\t\tSystem.out.println(\"Object deserialized from \" + filename);\n\t\t} catch (IOException | ClassNotFoundException e) {\\n\t\t\te.printStackTrace();\n\t\t}\n\t\treturn obj;\n\t}\n}"],
+    "explanations": [
+      "Serialization is the process of converting an object into a format that can be stored or transmitted. The example demonstrates serializing an instance of the 'Person' class to a file named 'person.dat'.",
+      "The code snippet involves serializing an instance of the 'Person' class using ObjectOutputStream. The serialized data is written to 'person.dat'.",
+      "The class 'Person' implements Serializable to enable object serialization. The code uses ObjectOutputStream to serialize an instance of 'Person' and writes it to 'person.dat'."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "Deserialization",
+    "patterns": ["Deserialization"],
+    "responses": ["import java.io.*;\nclass Person implements Serializable {\n\tprivate static final long serialVersionUID = 1L;\n\tprivate String name;\n\tprivate int age;\n\tpublic Person(String name, int age) {\n\t\tthis.name = name;\n\t\tthis.age = age;\n\t}\n\t@Override\n\tpublic String toString() {\n\t\treturn \"Person [name=\" + name + \", age=\" + age + \"]\";\n\t}\n}\npublic class Serialization {\n\tpublic static void main(String[] args) {\n\t\t// Create a Person object\n\t\tPerson person = new Person(\"John Doe\", 25);\n\t\t// Serialize the object to a file\n\t\tserializeObject(person, \"person.ser\");\n\t\t// Deserialize the object from the file\n\t\tPerson deserializedPerson = deserializeObject(\"person.ser\");\n\t\t// Print the deserialized object\n\t\tSystem.out.println(\"Deserialized Person: \" + deserializedPerson);\n\t}\n\tprivate static void serializeObject(Object obj, String fileName) {\n\t\ttry (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(fileName))) {\n\t\t\toos.writeObject(obj);\n\t\t\tSystem.out.println(\"Object has been serialized and saved to \" + fileName);\n\t\t} catch (IOException e) {\n\t\t\te.printStackTrace();\n\t\t}\n\t}\n\tprivate static <T> T deserializeObject(String fileName) {\n\t\tT obj = null;\n\t\ttry (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(fileName))) {\n\t\t\tobj = (T) ois.readObject();\n\t\t\tSystem.out.println(\"Object has been deserialized from \" + fileName);\n\t\t} catch (IOException | ClassNotFoundException e) {\n\t\t\te.printStackTrace();\n\t\t}\n\t\treturn obj;\n\t}\n}\n"],
+    "explanations": [
+      "Deserialization is the process of converting serialized data back into an object. The code reads serialized data from 'person.dat' and reconstructs the 'Person' object.",
+      "This code snippet demonstrates deserialization using ObjectInputStream. It reads data from 'person.dat' and reconstructs the original 'Person' object.",
+      "The snippet uses ObjectInputStream to deserialize an object from 'person.dat'. It reconstructs the serialized 'Person' object and assigns it to the 'person' variable."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "RegexMatch",
+    "patterns": ["RegexMatch", "Regex Match"],
+    "responses": ["import java.util.regex.Matcher;\nimport java.util.regex.Pattern;\npublic class Regex {\n\tpublic static void main(String[] args) {\n\t\t// Sample text\n\t\tString text = \"Hello, my email is user@example.com and my phone number is +1234567890.\";\n\t\t/ Define a regex pattern for extracting email and phone number\n\t\tString emailPattern = \"\\\\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\\\.[A-Z|a-z]{2,}\\\\b\";\n\t\tString phonePattern = \"\\\\+\\\\d{10}\";\n\t\t// Create Pattern objects\n\t\tPattern emailRegex = Pattern.compile(emailPattern);\n\t\tPattern phoneRegex = Pattern.compile(phonePattern);\n\t\t// Create Matcher objects\n\t\tMatcher emailMatcher = emailRegex.matcher(text);\n\t\tMatcher phoneMatcher = phoneRegex.matcher(text);\n\t\t// Find and print email addresses\n\t\tSystem.out.println(\"Email addresses found:\");\n\t\twhile (emailMatcher.find()) {\n\t\t\tSystem.out.println(emailMatcher.group());\n\t\t}\n\\t\t// Find and print phone numbers\n\t\tSystem.out.println(\"\nPhone numbers found:\");\n\t\twhile (phoneMatcher.find()) {\n\t\t\tSystem.out.println(phoneMatcher.group());\n\t\t}\n\t}\n}\n"],
+    "explanations": [
+      "This code demonstrates how to use regular expressions in Java to match a sequence of digits in a string. It first compiles a regular expression pattern '\\d+' which matches one or more digits. Then, it creates a Matcher object and tries to match the pattern against the input string '12345'. The 'matches()' method returns whether the entire input matches the pattern.",
+      "This code utilizes Java's regular expression features to check if a given string consists of only digits. It compiles a regular expression pattern that looks for sequences of digits. Then, it creates a Matcher instance to apply this pattern to the input string '12345'. The 'matches()' method verifies if the entire input adheres to the pattern.",
+      "Using Java's regular expression library, this code aims to determine if a string contains only numeric characters. It creates a pattern that represents one or more digits. Subsequently, a Matcher object attempts to match the pattern against the string '12345'. The 'matches()' method verifies if the entire string follows the given pattern."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "RegexReplace",
+    "patterns": ["RegexReplace", "Regex Replace"],
+    "responses": ["import java.util.regex.Matcher;\nimport java.util.regex.Pattern;\npublic class RegexReplace {\n\tpublic static void main(String[] args) {\n\t\t// Sample input string\n\t\tString inputString = \"Hello, <name>! Today is <day>.\";\n\t\t// Define a regular expression pattern\n\t\tString regex = \"<(.*?)>\";\n\t\t// Create a Pattern object\n\t\tPattern pattern = Pattern.compile(regex);\n\t\t// Create a Matcher object\n\t\tMatcher matcher = pattern.matcher(inputString);\n\t\t// Replace matches with desired values\n\t\tString result = matcher.replaceAll(matchResult -> {\n\t\t\t// Here, you can customize the replacement logic based on match groups\n\t\t\tswitch (matchResult.group(1)) {\n\t\t\t\tcase \"name\":\n\t\t\t\t\treturn \"John\";\n\t\t\t\tcase \"day\":\n\t\t\t\t\treturn \"Monday\";\n\t\t\t\tdefault:\n\t\t\t\t\treturn \"Unknown\";\n\t\t\t}\n\t\t});\n\t\t// Print the result\n\t\tSystem.out.println(\"Original: \" + inputString);\n\t\tSystem.out.println(\"Modified: \" + result);\n\t}\n}\n\n"],
+    "explanations": [
+      "This code showcases the use of Java's String 'replaceAll()' method with a regular expression. The input string 'Hello123World' is modified by replacing all sequences of digits with an empty string, effectively removing the numeric characters.",
+      "Utilizing the 'replaceAll()' method in Java, this code alters the string 'Hello123World' by substituting any continuous sequence of digits with an empty string. As a result, the numeric characters are effectively deleted from the original string.",
+      "The provided code employs Java's String 'replaceAll()' function along with a regular expression. The input string 'Hello123World' is transformed by removing any consecutive digit sequences, resulting in the removal of all numeric characters."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "InterfaceDefaultMethod",
+    "patterns": ["InterfaceDefaultMethod", "Interface Default Method", "Interface"],
+    "responses": ["public class InterfaceDefault implements Greeting {\n\tpublic static void main(String[] args) {\n\t\ttest01 main = new test01();\n\t\t// Call the abstract method\n\t\tmain.greet(\"John\");\n\t\t// Call the default method\n\t\tmain.defaultGreet();\n\t}\n\t// Implement the abstract method\n\t@Overrid\\n\tpublic void greet(String name) {\n\t\tSystem.out.println(\"Hello, \" + name + \"!\");\n\t}\n\t// Default method from the Greeting interface\n\t@Override\n\tpublic void defaultGreet() {\n\t\tSystem.out.println(\"Hello, Default Greeting!\");\n\t}\n}\ninterface Greeting {\n\t// Abstract method\n\tvoid greet(String name);\n\t// Default method\n\tdefault void defaultGreet() {\n\t\tSystem.out.println(\"Hello, Default Greeting!\");\n\t}\n}\n"],
+    "explanations": [
+      "This code defines a Java interface 'MyInterface' containing a normal method and a default method. The default method provides an implementation that prints 'Default method implementation' to the console. Classes implementing this interface can use both methods, with the option to override the default method implementation if needed.",
+      "Java's 'MyInterface' includes two methods: 'normalMethod()' and 'defaultMethod()'. While 'normalMethod()' has no implementation in the interface itself, 'defaultMethod()' offers a default implementation that outputs 'Default method implementation' to the console. Classes implementing this interface inherit these methods.",
+      "The code introduces an interface named 'MyInterface' with two methods: 'normalMethod()' and 'defaultMethod()'. 'defaultMethod()' is implemented with a default behavior of printing 'Default method implementation'. Classes that implement this interface can use both methods and choose whether to override the default method."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "FunctionalInterface",
+    "patterns": ["FunctionalInterface", "Functional Interface"],
+    "responses": ["// Define a functional interface with a single abstract method\n@FunctionalInterface\ninterface MyFunctionalInterface {\n\tvoid myMethod();\n}\npublic class FunctionalInterface {\n\tpublic static void main(String[] args) {\n\t\t// Using a lambda expression to implement the functional interface\n\t\tMyFunctionalInterface myFunctionalInterface = () -> {\n\t\t\tSystem.out.println(\"Executing myMethod using a lambda expression.\");\n\t\t};\n\t\t// Calling the method defined in the functional interface\n\t\tmyFunctionalInterface.myMethod();\n\t\t// Using an anonymous class to implement the functional interface\n\t\tMyFunctionalInterface anonymousClassImplementation = new MyFunctionalInterface() {\n\t\t\t@Override\n\t\t\tpublic void myMethod() {\n\t\t\t\tSystem.out.println(\"Executing myMethod using an anonymous class.\");\n\t\t\t}\n\t\t};\n\t\t// Calling the method defined in the functional interface using anonymous class\n\t\tanonymousClassImplementation.myMethod();\n\t}\n}\n"],
+    "explanations": [
+      "This code defines a functional interface 'MyFunctionalInterface' using the '@FunctionalInterface' annotation. It declares a single abstract method 'doSomething()' that any implementing class must provide. Functional interfaces are often used in Java to enable lambda expressions and functional programming.",
+      "The provided code demonstrates the creation of a functional interface named 'MyFunctionalInterface'. The annotation '@FunctionalInterface' signifies that this interface is intended for use with lambda expressions. It specifies a single method 'doSomething()' which implementing classes must define.",
+      "Java's '@FunctionalInterface' annotation is utilized in this code to define a functional interface 'MyFunctionalInterface'. This interface requires an implementation of the 'doSomething()' method. Functional interfaces are valuable for leveraging lambda expressions and functional-style programming."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "MethodOverloading",
+    "patterns": ["MethodOverloading", "Method Overloading"],
+    "responses": ["public class MethodOverloadingExample {\n\tpublic static void main(String[] args) {\n\t\t// Example 1: Calling overloaded methods with different parameter types\n\t\tSystem.out.println(add(5, 10));\n\t\tSystem.out.println(add(5.5, 10.5));\n\t\t// Example 2: Calling overloaded methods with different number of parameters\n\t\tSystem.out.println(concat(\"Hello\", \"World\"));\n\t\tSystem.out.println(concat(\"Hello\", \" \", \"World\"));\n\t}\n\t// Method 1: Add two integers\n\tpublic static int add(int a, int b) {\n\t\treturn a + b;\n\t}\n\t// Method 2: Add two doubles\n\tpublic static double add(double a, double b) {\n\t\treturn a + b;\n\t}\n\t// Method 3: Concatenate two strings\n\tpublic static String concat(String str1, String str2) {\n\t\treturn str1 + str2;\n\t}\n\t// Method 4: Concatenate three strings\n\tpublic static String concat(String str1, String str2, String str3) {\n\t\treturn str1 + str2 + str3;\n\t}\n}\n"],
+    "explanations": [
+      "The code defines a Java class 'Calculator' featuring two 'add' methods that demonstrate method overloading. One version accepts two integers and returns their sum, while the other takes two doubles and returns their sum. Method overloading allows a class to have multiple methods with the same name but different parameter types.",
+      "This Java class 'Calculator' illustrates method overloading. It provides two 'add' methods—one for integers and another for doubles. This technique allows the class to accommodate both types of numbers while performing addition using the same method name but different parameter types.",
+      "The provided code showcases method overloading within the 'Calculator' class. Two 'add' methods are defined—one for integers and another for doubles. This approach enables the class to add values of different types while utilizing a consistent method name."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "StaticImport",
+    "patterns": ["StaticImport", "Static Import"],
+    "responses": ["public class StaticImport {\n\tpublic static void main(String[] args) {\n\t\tint x = 10;\n\t\tint y = 5;\n\t\t// Using static import to directly access static methods\n\t\tint sum = add(x, y);\n\t\tint difference = subtract(x, y);\n\n\t\tSystem.out.println(\"Sum: \" + sum);\n\t\tSystem.out.println(\"Difference: \" + difference);\n\t}\n\tpublic static int subtract(int a, int b) {\n\t\treturn a - b;\n\t}\n\tpublic static int add(int a, int b) {\n\t\treturn a + b;\n\t}\n}\n"],
+    "explanations": [
+      "In this code snippet, the 'import static java.lang.Math.*;' statement allows you to directly use static methods from the 'Math' class without specifying the class name. Here, the 'sqrt' function is called to calculate the square root of 25.0.",
+      "The 'import static' statement enables you to access static members of a class without explicitly using the class name. Here, 'Math.*' imports all static members of the 'Math' class. The 'sqrt' function calculates the square root of 25.0.",
+      "By using 'import static java.lang.Math.*;', you eliminate the need to prefix 'Math' while calling its static methods. The 'sqrt' method calculates the square root of 25.0 in this case."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "VarKeyword",
+    "patterns": ["VarKeyword", "Var Keyword"],
+    "responses": ["public class VarKeyword {\n\tpublic static void main(String[] args) {\n\t\t// Inferring the type of a String variable\n\t\tvar message = \"Hello, Var Example!\";\n\t\tSystem.out.println(message);\n\t\t// Inferring the type of an integer variable\n\t\tvar number = 42;\n\t\tSystem.out.println(\"The answer is: \" + number);\n\t\t// Inferring the type of an array\n\t\tvar numbers = new int[]{1, 2, 3, 4, 5};\n\t\tSystem.out.print(\"Array elements: \");\n\t\tfor (var n : numbers) {\n\t\t\tSystem.out.print(n + \" \");\n\t\t}\n\t\tSystem.out.println();\n\t\t// Inferring the type in a for loop\n\t\tvar names = new String[]{\"Alice\", \"Bob\", \"Charlie\"};\n\t\tSystem.out.print(\"Names: \");\n\t\tfor (var name : names) {\n\t\tSystem.out.print(name + \" \");\n\t\t}\n\t\tSystem.out.println();\n\t}\n}\n"],
+    "explanations": [
+      "The 'var' keyword allows type inference, inferring the types of 'name' and 'age' as 'String' and 'int', respectively. 'name' is assigned the value 'Alice', and 'age' is assigned the value 30.",
+      "In this code, 'var' is used for type inference. 'name' is inferred as a 'String', and 'age' as an 'int'. Both variables are then assigned values, 'Alice' and 30, respectively.",
+      "By utilizing the 'var' keyword, you let the compiler deduce the types of 'name' and 'age'. The 'name' variable holds 'Alice', while 'age' holds the value 30."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "Optional",
+    "patterns": ["Optional"],
+    "responses": ["import java.util.Optional;\npublic class OptionalExample {\n\tpublic static void main(String[] args) {\n\t\t// Example 1: Creating an Optional with a value\n\t\tOptional<String> optionalValue = Optional.of(\"Hello, Optional!\");\n\t\t// Example 2: Creating an empty Optional\n\t\tOptional<String> emptyOptional = Optional.empty();\n\t\t// Example 3: Creating an Optional with a nullable value\n\t\tString nullableValue = \"Nullable Value\";\n\t\tOptional<String> optionalNullableValue = Optional.ofNullable(nullableValue);\n\t\t// Example 4: Using methods on Optional\n\t\tSystem.out.println(\"Example 1: \" + optionalValue.get()); // Prints the value\n\t\t// Example 5: Checking if an Optional has a value\n\t\tif (emptyOptional.isPresent()) {\n\t\t\tSystem.out.println(\"Example 2: \" + emptyOptional.get()); // This won't be executed\n\t\t} else {\n\t\t\tSystem.out.println(\"Example 2: Optional is empty\");\\n\\t\\t}\n\t\t// Example 6: Default value if Optional is empty\n\t\tString result = optionalNullableValue.orElse(\"Default Value\");\n\t\tSystem.out.println(\"Example 3: \" + result); // Prints \"Nullable Value\"\n\t\t// Example 7: Using map to transform the value\n\t\tString transformedValue = optionalValue.map(s -> s.toUpperCase()).orElse(\"No value\");\n\t\tSystem.out.println(\"Example 4: \" + transformedValue); // Prints \"HELLO, OPTIONAL!\"\n\t\t// Example 8: Chaining multiple Optional operations\n\t\tOptional<String> chainedResult = optionalNullableValue\n\t\t\t\t.map(String::toUpperCase)\n\t\t\t\t.filter(s -> s.contains(\"VALUE\"));\n\t\tSystem.out.println(\"Example 5: \" + chainedResult.orElse(\"No matching value\")); // Prints \"NULLABLE VALUE\"\n\t}\n}\n"],
+    "explanations": [
+      "The 'Optional' class is imported, allowing safer handling of potential null values. 'name' is assigned an 'Optional' containing the result of 'getName()', which may be null.",
+      "Importing 'Optional' facilitates handling nullable values. Here, 'name' is assigned an 'Optional' containing the result of 'getName()', which could be null if 'getName()' returns null.",
+      "By importing 'Optional', you can handle situations with potential null values. 'name' holds an 'Optional' that wraps the outcome of 'getName()', which might be null."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "StringFormat",
+    "patterns": ["StringFormat", "String Format"],
+    "responses": ["public class StringFormatExample {\n\tpublic static void main(String[] args) {\n\t\t// Example variables\n\t\tString name = \"John\";\n\t\tint age = 25;\n\t\tdouble height = 5.9;\n\t\t// Using String.format to create a formatted string\n\t\tString formattedString = String.format(\"Hello, my name is %s. I am %d years old, and my height is %.2f feet.\", name, age, height);\n\t\t// Printing the formatted string\n\t\tSystem.out.println(formattedString);\n\t}\n}\n"],
+    "explanations": [
+        "In this code, 'String.format' is used to create a formatted string. The placeholders '%s' and '%d' are replaced by the values of 'name' and 'age', resulting in 'message' containing 'Name: Alice, Age: 30'.",
+        "'String.format' formats a string using placeholders. 'name' and 'age' values are inserted into the placeholders '%s' and '%d', producing 'message' with 'Name: Alice' and 'Age: 30'.",
+        "By employing 'String.format', you can construct formatted strings. 'message' is created by inserting 'name' ('Alice') and 'age' (30) into the placeholders '%s' and '%d'."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "FunctionalInterfaceLambda",
+    "patterns": ["FunctionalInterfaceLambda", "Functional Interface Lambda"],
+    "responses": ["@FunctionalInterface\ninterface MyFunctionalInterface {\n\tvoid myMethod(String s);\n}\npublic class FunctionalInterfaceLambda {\n\tpublic static void main(String[] args) {\n\t\t// Using a lambda expression to implement the functional interface\n\t\tMyFunctionalInterface myFunctionalInterface = (s) -> {\n\t\t\tSystem.out.println(\"Lambda expression: \" + s);\n\t\t};\n\t\t// Calling the method defined in the functional interface\n\t\tmyFunctionalInterface.myMethod(\"Hello, Functional Interface!\");\n\t\t// You can also use a method reference\n\t\tMyFunctionalInterface methodReference = test01::printMessage;\n\t\tmethodReference.myMethod(\"Hello, Method Reference!\");\\n\\t}\n\t// Method to be used in the method reference\n\tstatic void printMessage(String message) {\\n\\t\\tSystem.out.println(\"Method reference: \" + message);\n\t}\n}\n"],
+    "explanations": [
+      "This code defines a functional interface 'MyFunctionalInterface' with a single abstract method 'doSomething()'. An instance 'func' of the interface is created using a lambda expression to print 'Doing something'.",
+      "A functional interface 'MyFunctionalInterface' with an abstract method 'doSomething()' is declared. An instance 'func' of the interface is initialized using a lambda that prints 'Doing something'.",
+      "The code introduces a functional interface 'MyFunctionalInterface' with an abstract method. 'func' is an instance of this interface, implemented using a lambda to display 'Doing something'."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "BiFunction",
+    "patterns": ["BiFunction"],
+    "responses": ["import java.util.function.BiFunction;\npublic class BiFunctionExample {\n\tpublic static void main(String[] args) {\n\t\t// Define a BiFunction that takes two integers and returns their sum\n\t\tBiFunction<Integer, Integer, Integer> addFunction = (a, b) -> a + b;\n\t\t// Test the BiFunction with some values\n\t\tint result1 = addFunction.apply(3, 5);\n\t\tint result2 = addFunction.apply(10, 20);\n\t\t// Display the results\n\t\tSystem.out.println(\"Result 1: \" + result1);\n\t\tSystem.out.println(\"Result 2: \" + result2);\n\t}\n}\n"],
+    "explanations": [
+      "The 'BiFunction' is a functional interface in Java that takes two input arguments and produces a result.",
+      "In the provided example, we import 'BiFunction' and use it to create a lambda expression that adds two integers.",
+      "The lambda expression '(a, b) -> a + b' takes two Integer inputs 'a' and 'b', and returns their sum."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "WildcardGenerics",
+    "patterns": ["WildcardGenerics", "Wildcard Generics"],
+    "responses": ["import java.util.ArrayList;\nimport java.util.List;\nclass Box<T> {\n\tprivate T value;\n\tpublic Box(T value) {\n\t\tthis.value = value;\n\t}\n\tpublic T getValue() {\n\t\treturn value;\n\t}\n}\npublic class WildcardGenerics {\n\t// Method that accepts a list of boxes with unknown types\n\tpublic static void printBoxValues(List<? extends Box<?>> boxes) {\n\t\tfor (Box<?> box : boxes) {\n\t\t\tSystem.out.println(\"Box value: \" + box.getValue());\n\t\t}\n\t}\n\tpublic static void main(String[] args) {\n\t\t// Creating boxes with different types of values\n\t\tBox<Integer> integerBox = new Box<>(42);\n\t\tBox<String> stringBox = new Box<>(\"Hello, Generics!\");\n\t\tBox<Double> doubleBox = new Box<>(3.14);\n\t\t// Creating a list of boxes with different types\n\t\tList<Box<?>> boxes = new ArrayList<>();\n\t\tboxes.add(integerBox);\n\t\tboxes.add(stringBox);\n\t\tboxes.add(doubleBox);\n\t\t// Printing the values using wildcard generics\n\t\tprintBoxValues(boxes);\n\t}\n}\n"],
+    "explanations": [
+      "The use of wildcard generics allows for flexibility in defining collections with unknown type parameters.",
+      "In the given code, 'List<?>' represents a list of unknown type, and 'ArrayList<String>' is assigned to it.",
+      "This allows adding elements of any type to the list while restricting retrieval to objects of type 'Object'."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "MultipleBounds",
+    "patterns": ["MultipleBounds", "Multiple Bounds"],
+    "responses": [ "import java.io.Serializable;\npublic class MultipleBoundsExample {\n\t// Generic method with multiple bounds\n\tpublic static <T extends Comparable<T> & Serializable> void printAndSerialize(T obj) {\n\t\t// Perform operations specific to objects that implement both Comparable and Serializable\n\t\tSystem.out.println(\"Object value: \" + obj);\n\t\t// Serialize the object (just a placeholder operation for demonstration)\n\t\tString serialized = serialize(obj);\n\t\tSystem.out.println(\"Serialized value: \" + serialized);\n\t}\n\t// Dummy serialization method (for demonstration purposes)\n\tprivate static <U extends Serializable> String serialize(U obj) {\n\t\t// Placeholder implementation to simulate serialization\n\t\treturn obj.toString();\n\t}\n\tpublic static void main(String[] args) {\n\t\t// Example with a class that implements both Comparable and Serializable\n\t\tMyClass myClass = new MyClass(42);\n\t\tprintAndSerialize(myClass);\n\t\t// Uncommenting the next line will result in a compilation error,\n\t\t// as Integer does not implement Serializable\n\t\t// printAndSerialize(10);\n\t}\n\t// Example class implementing Comparable and Serializable\n\tstatic class MyClass implements Comparable<MyClass>, Serializable {\n\t\tprivate int value;\n\t\tpublic MyClass(int value) {\n\t\t\tthis.value = value;\n\t\t}\n\t\t@Override\n\t\tpublic int compareTo(MyClass other) {return Integer.compare(this.value, other.value);\n\t\t}\n\t\t\t@Override\n\t\tpublic String toString() {\n\t\t\treturn \"MyClass{\" +\n\t\t\t\t\"value=\" + value +\n\t\t\t\t'}';\n\t\t}\n\t}\n}\n"],
+    "explanations": [
+      "Multiple bounds in Java refer to defining an interface or class that extends multiple superinterfaces or classes.",
+      "In this case, 'MyInterface' extends both 'Runnable' and 'Serializable', inheriting their methods and contracts.",
+      "This allows instances of 'MyInterface' to be used wherever 'Runnable' or 'Serializable' objects are expected."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "JDBCConnection",
+    "patterns": ["JDBCConnection"],
+    "responses": ["import java.sql.Connection;\nimport java.sql.DriverManager;\n\nConnection connection = DriverManager.getConnection(\"jdbc:mysql://localhost:3306/db\", \"username\", \"password\");\n"],
+    "explanations": [
+      "JDBC (Java Database Connectivity) enables Java applications to interact with databases.",
+      "In the provided code, we import required classes and use 'DriverManager.getConnection()' to establish a database connection.",
+      "The URL specifies the database location, and 'username' and 'password' authenticate the user to the database."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "JDBCCreateStatement",
+    "patterns": ["JDBCCreateStatement"],
+    "responses": ["import java.sql.Connection;\nimport java.sql.DriverManager;\nimport java.sql.Statement;\n\nConnection connection = DriverManager.getConnection(\"jdbc:mysql://localhost:3306/db\", \"username\", \"password\");\nStatement statement = connection.createStatement();\n"],
+    "explanations": [
+      "After obtaining a JDBC connection, you can create SQL statements to interact with the database.",
+      "In the provided code, we also import 'Statement' class and create a statement using 'connection.createStatement()'.",
+      "This 'Statement' object can be used to execute SQL queries or updates on the connected database."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "JDBCResultSet",
+    "patterns": ["JDBCResultSet"],
+    "responses": ["import java.sql.Connection;\nimport java.sql.DriverManager;\nimport java.sql.Statement;\nimport java.sql.ResultSet;\n\nConnection connection = DriverManager.getConnection(\"jdbc:mysql://localhost:3306/db\", \"username\", \"password\");\nStatement statement = connection.createStatement();\nResultSet resultSet = statement.executeQuery(\"SELECT * FROM employees\");\n"],
+    "explanations": [
+      "This code demonstrates how to use JDBC to establish a database connection and execute a SQL query.",
+      "The 'Connection' object is created using 'DriverManager.getConnection' with the database URL, username, and password.",
+      "A 'Statement' object is created to execute the SQL query, and a 'ResultSet' object is obtained from executing the query."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "JPACreateEntityManager",
+    "patterns": ["JPACreateEntityManager"],
+    "responses": ["import javax.persistence.EntityManager;\nimport javax.persistence.EntityManagerFactory;\nimport javax.persistence.Persistence;\n\nEntityManagerFactory emf = Persistence.createEntityManagerFactory(\"myPU\");\nEntityManager em = emf.createEntityManager();\n"],
+    "explanations": [
+      "This code demonstrates how to create an 'EntityManager' using Java Persistence API (JPA).",
+      "An 'EntityManagerFactory' is created using 'Persistence.createEntityManagerFactory' with the persistence unit name.",
+      "An 'EntityManager' is obtained from the 'EntityManagerFactory' using 'emf.createEntityManager()' for performing JPA operations."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "JPACreateEntity",
+    "patterns": ["JPACreateEntity"],
+    "responses": ["import javax.persistence.Entity;\nimport javax.persistence.Id;\n\n@Entity\npublic class Person {\n\t@Id\n\tprivate Long id;\n\tprivate String name;\n\t// getters and setters\n}\n"],
+    "explanations": [
+            "This code demonstrates how to define a JPA entity class using annotations.",
+            "The '@Entity' annotation marks the class as a JPA entity that corresponds to a database table.",
+            "The '@Id' annotation designates the primary key field, and additional fields are defined to map database columns."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "JPACriteriaQuery",
+    "patterns": ["JPACriteriaQuery"],
+    "responses": ["import javax.persistence.criteria.CriteriaBuilder;\nimport javax.persistence.criteria.CriteriaQuery;\nimport javax.persistence.criteria.Root;\n\nCriteriaBuilder cb = em.getCriteriaBuilder();\nCriteriaQuery<Person> cq = cb.createQuery(Person.class);\nRoot<Person> root = cq.from(Person.class);\n"],
+    "explanations": [
+      "This code demonstrates how to create a criteria query using JPA's Criteria API.",
+      "A 'CriteriaBuilder' is obtained from the 'EntityManager', which is used to construct criteria queries.",
+      "A 'CriteriaQuery' is created for a specific entity class, and a 'Root' is defined to specify the query's root entity."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "JUnitTest",
+    "patterns": ["JUnitTest"],
+    "responses": ["import org.junit.jupiter.api.Test;\nimport static org.junit.jupiter.api.Assertions.*;\n\nclass MyTest {\n\t@Test\n\tvoid testMethod() {\n\t\tassertEquals(2, 1 + 1);\n\t}\n}\n"],
+    "explanations": [
+      "This code demonstrates how to write a simple JUnit test case using JUnit 5.",
+      "The '@Test' annotation marks the method as a test case to be executed by the testing framework.",
+      "The 'assertEquals' method from the 'Assertions' class is used to verify that the expected and actual values are equal."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "MockitoMock",
+    "patterns": ["MockitoMock"],
+    "responses": ["import org.mockito.Mock;\nimport static org.mockito.Mockito.*;\n\nclass MyTest {\n\t@Mock\n\tprivate MyService service;\n}\n"],
+    "explanations": [
+      "This response demonstrates the usage of Mockito's @Mock annotation. The @Mock annotation is used to create a mock instance of the MyService class. Mock objects simulate the behavior of real objects, allowing you to isolate the unit under test and define specific behaviors or return values for methods during testing.",
+      "The static import of org.mockito.Mockito.* allows you to use Mockito's static methods, such as 'mock()', 'when()', and 'verify()', for defining mock behaviors and verifying interactions.",
+      "In this example, the code sets up a mock instance of MyService, which can be used in unit tests to simulate the behavior of the service without interacting with the actual implementation."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "SpringBootApplication",
+    "patterns": ["SpringBootApplication"],
+    "responses": ["import org.springframework.boot.SpringApplication;\nimport org.springframework.boot.autoconfigure.SpringBootApplication;\n\n@SpringBootApplication\npublic class MyApp {\n\tpublic static void main(String[] args) {\n\t\tSpringApplication.run(MyApp.class, args);\n\t}\n}\n"],
+    "explanation": [
+      "This response demonstrates the creation of a basic Spring Boot application. The @SpringBootApplication annotation combines several Spring annotations, including @Configuration, @EnableAutoConfiguration, and @ComponentScan, simplifying the setup of a Spring Boot project.",
+      "The main method initializes the Spring application by calling 'SpringApplication.run()', which starts the embedded Spring Boot container and launches the application.",
+      "Spring Boot simplifies the process of building stand-alone, production-grade Spring-based applications, making it easier to create microservices and other Java applications with minimal configuration."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "SpringRestController",
+    "patterns": ["SpringRestController"],
+    "responses": ["import org.springframework.web.bind.annotation.RestController;\nimport org.springframework.web.bind.annotation.GetMapping;\n\n@RestController\npublic class MyController {\n\t@GetMapping(\"/hello\")\n\tpublic String hello() {\n\t\treturn \"Hello, World!\";\n\t}\n}\n"],
+    "explanations": [
+      "This response illustrates the creation of a Spring MVC RestController. The @RestController annotation indicates that the class defines a RESTful web service and automatically handles serialization of objects to JSON.",
+       "The @GetMapping annotation maps an HTTP GET request to the 'hello()' method. When a GET request is made to the '/hello' endpoint, the method returns the string 'Hello, World!' as the response.",
+      "Spring's MVC framework simplifies the development of web applications by providing annotations and features that help manage routes, handle requests, and format responses in a RESTful manner."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "SpringAutowired",
+    "patterns": ["SpringAutowired"],
+    "responses": ["import org.springframework.beans.factory.annotation.Autowired;\n\nclass MyService {\n\t@Autowired\n\tprivate MyRepository repository;\n}\n"],
+    "explanations": [
+      "This response showcases the use of Spring's @Autowired annotation for dependency injection. The @Autowired annotation allows Spring to automatically inject dependencies into a class, in this case, injecting an instance of MyRepository into the MyService class.",
+      "Dependency injection is a core concept in Spring that promotes loose coupling and easier testing by allowing you to declare dependencies through annotations instead of hardcoding them.",
+      "By using @Autowired, the MyService class can utilize methods from MyRepository without creating a new instance, and Spring handles the lifecycle of the injected dependencies."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "SpringJPARepository",
+    "patterns": ["SpringJPARepository"],
+    "responses": ["import org.springframework.data.jpa.repository.JpaRepository;\n\ninterface MyRepository extends JpaRepository<MyEntity, Long> {\n\t// custom query methods\n}\n"],
+    "explanations": [
+      "This response demonstrates the creation of a Spring Data JPA repository interface using the JpaRepository interface. Spring Data JPA simplifies database operations by providing a higher-level abstraction for working with databases using JPA (Java Persistence API).",
+      "The interface extends JpaRepository<MyEntity, Long>, where MyEntity is the entity class and Long is the type of the primary key. Spring Data JPA automatically generates database queries based on method names defined in this interface.",
+      "Developers can define custom query methods in the interface, and Spring Data JPA will automatically implement them using convention-based query generation, eliminating the need for writing complex SQL queries in most cases."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "SpringDependencyInjection",
+    "patterns": ["SpringDependencyInjection"],
+    "responses": ["import org.springframework.context.annotation.Bean;\nimport org.springframework.context.annotation.Configuration;\n\n@Configuration\npublic class MyConfig {\n\t@Bean\n\tpublic MyService myService() {\n\t\treturn new MyService();\n\t}\n}\n"],
+    "explanations": [
+      "This code snippet demonstrates the usage of Spring's dependency injection feature. The `@Bean` annotation is used within a `@Configuration` class to define a method that creates and configures a bean. In this case, the `myService` method creates an instance of `MyService` class and returns it. Spring manages the lifecycle and dependencies of the bean.",
+      "The `@Configuration` annotation marks the class as a source of bean definitions. The `@Bean` annotation on the method indicates that the return value of the method should be registered as a bean in the Spring container. This allows the bean to be retrieved and used throughout the application.",
+       "By utilizing Spring's dependency injection, you can centralize configuration, promote loose coupling, and easily manage and inject dependencies, leading to more modular and maintainable code."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "LambdaForEach",
+    "patterns": ["LambdaForEach"],
+    "responses": ["import java.util.Arrays;\nimport java.util.List;\npublic class LambdaForEachExample {\n\tpublic static void main(String[] args) {\n\t\t// Create a list of strings\n\t\tList<String> stringList = Arrays.asList(\"Java\", \"Python\", \"C++\", \"JavaScript\");\n\t\t// Using forEach with lambda expression to iterate and print each element\n\t\tSystem.out.println(\"Using forEach with Lambda Expression:\");\n\t\tstringList.forEach(element -> System.out.println(element));\n\t\t// You can also use a method reference\n\t\t// System.out.println(\"Using forEach with Method Reference:\");\n\t\t// stringList.forEach(System.out::println);\n\t}\n}\n"],
+    "explanations": [
+      "This code snippet showcases the use of Java 8's lambda expressions and the `forEach` method on a collection. The list of integers is created using the `Arrays.asList` method. The `forEach` method iterates through each element of the list and applies the provided lambda expression.",
+      "In this case, the lambda expression `number -> System.out.println(number)` prints each number in the list to the console. Lambda expressions provide a concise way to express functionality as an argument to a method, promoting more readable and expressive code.",
+      "The combination of lambda expressions and functional-style methods like `forEach` makes it easier to work with collections and perform operations on their elements without the need for traditional loops."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "LocalTime",
+    "patterns": ["LocalTime", "Local Time"],
+    "responses": ["import java.time.LocalTime;\npublic class LocalTimeExample {\n\tpublic static void main(String[] args) {\n\t\t// Get the current time\n\t\tLocalTime currentTime = LocalTime.now();\n\t\t// Display the current time\n\t\tSystem.out.println(\"Current Time: \" + currentTime);\n\t}\n}\n"],
+    "explanations": [
+      "This code snippet demonstrates the usage of Java's `LocalTime` class from the `java.time` package to work with time values. The `LocalTime.now()` method is used to obtain the current local time.",
+      "The `LocalTime` class represents a time without a date and time zone. It allows you to manipulate and represent time-based values, such as hours, minutes, seconds, and nanoseconds. This is especially useful when you need to work with time-related calculations or representations.",
+      "By utilizing the `java.time` package introduced in Java 8, you can handle date and time operations more effectively, including parsing, formatting, and arithmetic operations, while avoiding many of the issues associated with older date and time classes."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "DateTimeFormatter",
+    "patterns": ["DateTimeFormatter", "Date Time Formatter"],
+    "responses": ["import java.time.LocalDateTime;\nimport java.time.format.DateTimeFormatter;\npublic class DateTimeFormatter {\n\tpublic static void main(String[] args) {\n\t\t// Create a LocalDateTime object representing the current date and time\n\t\tLocalDateTime now = LocalDateTime.now();\n\t\t// Define a custom date-time format\n\t\tDateTimeFormatter formatter = DateTimeFormatter.ofPattern(\"yyyy-MM-dd HH:mm:ss\");\n\t\t// Format the current date and time using the custom format\n\t\tString formattedDateTime = now.format(formatter);\n\t\tSystem.out.println(\"Formatted Date and Time: \" + formattedDateTime);\n\t\t// Parse a date-time string using the custom format\n\t\tString dateTimeString = \"2023-11-14 15:30:00\";\n\t\tLocalDateTime parsedDateTime = LocalDateTime.parse(dateTimeString, formatter);\n\t\tSystem.out.println(\"Parsed Date and Time: \" + parsedDateTime);\n\t}\n}\n"],
+    "explanations": [
+            "This code snippet showcases the usage of Java's `DateTimeFormatter` and `LocalDate` classes from the `java.time.format` and `java.time` packages, respectively. The `DateTimeFormatter.ofPattern` method is used to create a formatter with a specific pattern.",
+            "The formatter is then used to format the current date obtained from `LocalDate.now()`. The resulting formatted date is stored in the `formattedDate` variable. The `ofPattern` method allows you to define custom patterns for formatting and parsing dates.",
+            "Using `java.time` classes and formatters improves date and time handling in Java by providing a modern and flexible API. It helps avoid the complexities and limitations of older date formatting approaches, leading to more accurate and reliable date manipulation."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "FileReadLines",
+    "patterns": ["FileReadLines"],
+    "responses": ["import java.io.IOException;\nimport java.nio.file.Files;\nimport java.nio.file.Path;\nimport java.util.List;\n\ntry {\n\tPath filePath = Path.of(\"file.txt\");\n\tList<String> lines = Files.readAllLines(filePath);\n} catch (IOException e) {\n\te.printStackTrace();\n}\n"],
+    "explanations": [
+      "This code snippet demonstrates reading lines from a file using Java's `Files` and `Path` classes. The code is enclosed within a try-catch block to handle potential `IOExceptions` that might occur during file reading.",
+      "The `Path.of(\"file.txt\")` method is used to create a `Path` object representing the file named \"file.txt\" in the current working directory. The `Files.readAllLines(filePath)` method reads all lines from the specified file into a list of strings.",
+      "In case an exception is thrown during file reading, the catch block prints the exception's stack trace. This example illustrates the basic file I/O operations in Java, providing a foundation for more complex file manipulation tasks."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "FileWriteLines",
+    "patterns": ["FileWriteLines"],
+    "responses": [
+      "import java.io.IOException;\nimport java.nio.file.Files;\nimport java.nio.file.Path;\nimport java.util.List;\n\ntry {\n\tPath filePath = Path.of(\"file.txt\");\n\tList<String> lines = List.of(\"Line 1\", \"Line 2\", \"Line 3\");\n\tFiles.write(filePath, lines);\n} catch (IOException e) {\n\te.printStackTrace();\n}"
+    ],
+    "explanations": [
+      "This code snippet demonstrates how to write multiple lines of text to a file using Java's NIO (New I/O) package.",
+      "The code imports necessary classes for file handling and demonstrates writing a list of strings to a specified file path.",
+      "It uses a try-catch block to handle possible exceptions that may occur during file writing, such as IOException."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "ThreadPoolExecutor",
+    "patterns": ["ThreadPoolExecutor"],
+    "responses": [
+      "import java.util.concurrent.ExecutorService;\nimport java.util.concurrent.Executors;\n\nExecutorService executor = Executors.newFixedThreadPool(5);\nexecutor.submit(() -> System.out.println(\"Task executed.\"));\nexecutor.shutdown();"
+    ],
+    "explanations": [
+      "This code demonstrates how to create a thread pool using Java's ExecutorService and Executors classes.",
+      "The snippet initializes a fixed-size thread pool with 5 threads and submits a task for execution.",
+      "After task submission, the executor is shut down to release resources associated with the thread pool."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "LinkedHashMap",
+    "patterns": ["LinkedHashMap"],
+    "responses": [
+      "import java.util.LinkedHashMap;\nimport java.util.Map;\n\nMap<String, Integer> map = new LinkedHashMap<>();\nmap.put(\"Alice\", 25);\nmap.put(\"Bob\", 30);"
+    ],
+    "explanations": [
+      "This code snippet showcases the usage of a LinkedHashMap in Java's collections framework.",
+      "It imports required classes and demonstrates how to create a LinkedHashMap with String keys and Integer values.",
+      "The snippet adds key-value pairs to the map, maintaining the insertion order of elements."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "PriorityQueue",
+    "patterns": ["PriorityQueue"],
+    "responses": [
+      "import java.util.PriorityQueue;\nimport java.util.Queue;\n\nQueue<Integer> queue = new PriorityQueue<>();\nqueue.add(5);\nqueue.add(3);\nqueue.add(8);"
+    ],
+    "explanations": [
+      "This code demonstrates the usage of a PriorityQueue, a priority-based queue implementation in Java.",
+      "It imports necessary classes and initializes a PriorityQueue to hold Integer elements.",
+      "The snippet adds elements to the queue, and the queue automatically maintains the order based on element priorities."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "StringJoiner",
+    "patterns": ["StringJoiner"],
+    "responses": [
+      "import java.util.StringJoiner;\n\nStringJoiner joiner = new StringJoiner(\", \");\njoiner.add(\"Alice\");\njoiner.add(\"Bob\");\njoiner.add(\"Charlie\");\nString result = joiner.toString();"
+    ],
+    "explanations": [
+      "This code showcases the usage of StringJoiner to join multiple strings with a delimiter in Java.",
+      "It imports the StringJoiner class and initializes it with a specified delimiter.",
+      "The snippet adds strings to the joiner and then converts the result to a single, joined string."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "MethodReferenceStatic",
+    "patterns": ["MethodReferenceStatic"],
+    "responses": ["List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);\nnumbers.forEach(System.out::println);\n"],
+    "explanations": [
+      "This code snippet demonstrates the use of a method reference in Java. It creates a list of integers and then uses the forEach method to print each integer using a static method reference.",
+      "The 'Arrays.asList()' method is used to create a List of integers. 'forEach()' is a stream operation that takes a lambda expression or method reference as an argument and applies it to each element in the collection.",
+      "The method reference 'System.out::println' is a shorthand notation for calling the 'println' method of the 'System.out' object. It is a concise way to pass a method as an argument."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "Deque",
+    "patterns": ["Deque"],
+    "responses": ["import java.util.ArrayDeque;\nimport java.util.Deque;\n\nDeque<String> deque = new ArrayDeque<>();\ndeque.addFirst(\"First\");\ndeque.addLast(\"Last\");\n"],
+    "explanations": [
+      "This code snippet showcases the usage of a Deque (Double-ended Queue) in Java. A Deque allows adding and removing elements from both ends.",
+      "The 'ArrayDeque' class is instantiated to create a Deque of strings. 'addFirst()' adds an element to the beginning of the Deque, and 'addLast()' adds an element to the end.",
+      "In this example, \"First\" is added to the front, and \"Last\" is added to the end of the Deque."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "CountDownLatch",
+    "patterns": ["CountDownLatch"],
+    "responses": ["import java.util.concurrent.CountDownLatch;\n\nCountDownLatch latch = new CountDownLatch(3);\n// Perform tasks\nlatch.countDown();\n"],
+    "explanations": [
+      "This code snippet illustrates the usage of a CountDownLatch in Java, which is used to synchronize threads by waiting for a specified number of events to occur.",
+      "A CountDownLatch with an initial count of 3 is created. Threads can call the 'countDown()' method to decrement the count. The 'await()' method blocks the thread until the count reaches zero.",
+      "In this example, the 'countDown()' method is called once, reducing the count by 1."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "CyclicBarrier",
+    "patterns": ["CyclicBarrier"],
+    "responses": ["import java.util.concurrent.CyclicBarrier;\n\nCyclicBarrier barrier = new CyclicBarrier(3);\n// Perform tasks\nbarrier.await();\n"],
+    "explanations": [
+      "This code snippet demonstrates the usage of a CyclicBarrier in Java. A CyclicBarrier is used to synchronize a fixed number of threads at a specific point.",
+      "A CyclicBarrier with a party size of 3 is created. Threads calling 'await()' will wait until the specified number of threads have called 'await()', at which point they are released together.",
+      "In this example, the barrier is set up for 3 threads. When all three threads reach the barrier and call 'await()', they will be released and can continue execution."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "ScheduledExecutor",
+    "patterns": ["ScheduledExecutor"],
+    "responses": ["import java.util.concurrent.Executors;\nimport java.util.concurrent.ScheduledExecutorService;\nimport java.util.concurrent.TimeUnit;\n\nScheduledExecutorService executor = Executors.newScheduledThreadPool(1);\nexecutor.schedule(() -> System.out.println(\"Task executed.\"), 5, TimeUnit.SECONDS);\n"],
+    "explanations": [
+      "This code snippet showcases the use of a ScheduledExecutorService in Java for scheduling tasks to run after a specified delay.",
+      "A ScheduledExecutorService is created using 'Executors.newScheduledThreadPool(1)' to create a thread pool with one thread. 'schedule()' is used to schedule a task (a lambda printing 'Task executed.') to run after a 5-second delay.",
+      "The 'TimeUnit.SECONDS' argument specifies the time unit for the delay. After the specified time, the task will be executed by the thread pool."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "Semaphore",
+    "patterns": ["Semaphore"],
+    "responses": ["import java.util.concurrent.Semaphore;\n\nSemaphore semaphore = new Semaphore(3);\ntry {\n\tsemaphore.acquire();\n\t// Perform task\n} finally {\n\tsemaphore.release();\n}\n"],
+    "explanations": [
+      "This code snippet demonstrates the use of a Semaphore in Java's concurrency utilities. A Semaphore is a synchronization primitive that maintains a set of permits. In this example, a Semaphore with a permit count of 3 is created. The `acquire()` method is used to acquire a permit, and the enclosed task is executed. After the task is done, the `release()` method is called to release the permit.",
+      "Semaphores are often used to control access to a shared resource with limited capacity, allowing a certain number of threads to access it concurrently.",
+      "The use of `acquire()` and `release()` ensures that only a limited number of threads can execute the critical section protected by the Semaphore at a time."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "BoundedBuffer",
+    "patterns": ["BoundedBuffer"],
+    "responses": ["import java.util.concurrent.ArrayBlockingQueue;\nimport java.util.concurrent.BlockingQueue;\n\nBlockingQueue<Integer> buffer = new ArrayBlockingQueue<>(10);\nbuffer.put(5);\nint value = buffer.take();\n"],
+    "explanations": [
+      "This code demonstrates the usage of a bounded buffer using Java's BlockingQueue interface. A bounded buffer is a data structure that limits the number of elements it can hold.",
+      "In this example, an ArrayBlockingQueue is created with a capacity of 10. Elements can be added to the buffer using `put()` and retrieved using `take()`. If the buffer is full, `put()` blocks until space is available; if the buffer is empty, `take()` blocks until an element is available.",
+      "BlockingQueues are commonly used in producer-consumer scenarios, where multiple threads produce data to be consumed by other threads, ensuring synchronization and proper handling of shared resources."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "RecursiveTask",
+    "patterns": ["RecursiveTask"],
+    "responses": ["import java.util.concurrent.RecursiveTask;\n\nclass FactorialTask extends RecursiveTask<Integer> {\n\tprivate int n;\n\n\tpublic FactorialTask(int n) {\n\t\tthis.n = n;\n\t}\n\n\t@Override\n\tprotected Integer compute() {\n\t\tif (n <= 1) {\n\t\t\treturn 1;\n\t\t}\n\t\tFactorialTask subtask = new FactorialTask(n - 1);\n\t\tsubtask.fork();\n\t\treturn n * subtask.join();\n\t}\n}\n"],
+    "explanations": [
+      "This code illustrates the use of a RecursiveTask in Java's ForkJoin framework. RecursiveTask is an abstract class that helps facilitate divide-and-conquer algorithms using parallelism.",
+      "In this example, a FactorialTask class extends RecursiveTask<Integer>. The `compute()` method computes the factorial of a number using recursive subtasks. If the value is small enough (base case), it returns the result directly. Otherwise, it creates a subtask for a smaller number, forks it (schedules for execution in a separate thread), and then joins the results of the subtask.",
+      "RecursiveTask is suitable for tasks that can be divided into smaller subtasks, processed independently, and then combined to produce the final result."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "CompletableFutureCombine",
+    "patterns": ["CompletableFutureCombine"],
+    "responses": ["import java.util.concurrent.CompletableFuture;\n\nCompletableFuture<Integer> future1 = CompletableFuture.supplyAsync(() -> 5);\nCompletableFuture<Integer> future2 = CompletableFuture.supplyAsync(() -> 3);\nCompletableFuture<Integer> combined = future1.thenCombine(future2, (result1, result2) -> result1 + result2);\n"],
+    "explanations": [
+      "This code demonstrates the use of CompletableFuture's `thenCombine` method for combining the results of two asynchronous tasks.",
+      "CompletableFuture is a class in Java's concurrency utilities that represents a future result of an asynchronous computation. In this example, two CompletableFuture instances (`future1` and `future2`) are created using `supplyAsync()`, which simulates asynchronous execution.",
+      "`thenCombine()` is used to combine the results of `future1` and `future2`. The lambda function `(result1, result2) -> result1 + result2` is applied to the results to compute their sum."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "CompletableFutureAsync",
+    "patterns": ["CompletableFutureAsync"],
+    "responses": ["import java.util.concurrent.CompletableFuture;\n\nCompletableFuture<Integer> future = CompletableFuture.supplyAsync(() -> 5);\nCompletableFuture<Void> asyncFuture = future.thenAcceptAsync(result -> System.out.println(result));"],
+    "explanations": [
+      "This code demonstrates the use of CompletableFuture's `thenAcceptAsync` method for asynchronously processing the result of a computation.",
+      "In this example, a CompletableFuture instance `future` is created using `supplyAsync()`, representing an asynchronous computation that produces an integer result.",
+      "`thenAcceptAsync()` is used to specify a callback function that will be executed asynchronously when the computation is complete. The lambda function `result -> System.out.println(result)` prints the result to the console."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "CompletableFutureException",
+    "patterns": ["CompletableFutureException"],
+    "responses": ["import java.util.concurrent.CompletableFuture;\n\nCompletableFuture<Integer> future = CompletableFuture.supplyAsync(() -> {\n\tif (condition) {\n\t\tthrow new RuntimeException(\"Error\");\n\t}\n\treturn 5;\n});\nCompletableFuture<Integer> exceptionHandled = future.exceptionally(ex -> 0);\n"],
+    "explanations": [
+      "This code demonstrates the use of CompletableFuture to handle exceptions that may occur during asynchronous computations.",
+      "A CompletableFuture is created to supply a result asynchronously. If a condition is met, a RuntimeException is intentionally thrown. The 'exceptionally' method is used to handle the exception and provide a default value.",
+      "By using 'exceptionally', even if an exception is thrown during computation, the resulting CompletableFuture will still produce a value, in this case, 0."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "CompletableFutureCompose",
+    "patterns": ["CompletableFutureCompose"],
+    "responses": ["import java.util.concurrent.CompletableFuture;\n\nCompletableFuture<Integer> future = CompletableFuture.supplyAsync(() -> 5);\nCompletableFuture<String> composed = future.thenCompose(result -> CompletableFuture.supplyAsync(() -> \"Value: \" + result));\n"],
+    "explanations": [
+      "This code demonstrates how to compose multiple CompletableFuture instances sequentially.",
+      "A CompletableFuture is created to supply an integer asynchronously. The 'thenCompose' method is used to chain another CompletableFuture operation that takes the result of the first one and supplies a string asynchronously by adding 'Value: ' to the original result.",
+      "The resulting CompletableFuture 'composed' represents the composition of the two asynchronous operations, where the final result is a string that includes the transformed value."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "CompletableFutureAllOf",
+    "patterns": ["CompletableFutureAllOf"],
+    "responses": ["import java.util.concurrent.CompletableFuture;\n\nCompletableFuture<Integer> future1 = CompletableFuture.supplyAsync(() -> 5);\nCompletableFuture<Integer> future2 = CompletableFuture.supplyAsync(() -> 3);\nCompletableFuture<Void> allOfFuture = CompletableFuture.allOf(future1, future2);\n"],
+    "explanations": [
+      "This code demonstrates how to wait for multiple CompletableFutures to complete using 'allOf'.",
+      "Two CompletableFutures are created to supply integers asynchronously. The 'allOf' method is used to combine these futures into a new CompletableFuture that completes when all the provided futures are completed.",
+      "The resulting CompletableFuture 'allOfFuture' doesn't carry a value; its completion indicates that both 'future1' and 'future2' have completed their computations."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "CompletableFutureAnyOf",
+    "patterns": ["CompletableFutureAnyOf"],
+    "responses": ["import java.util.concurrent.CompletableFuture;\n\nCompletableFuture<Integer> future1 = CompletableFuture.supplyAsync(() -> 5);\nCompletableFuture<Integer> future2 = CompletableFuture.supplyAsync(() -> 3);\nCompletableFuture<Object> anyOfFuture = CompletableFuture.anyOf(future1, future2);\n"],
+    "explanations": [
+      "This code demonstrates how to wait for the completion of any of the provided CompletableFutures using 'anyOf'.",
+      "Two CompletableFutures are created to supply integers asynchronously. The 'anyOf' method is used to create a new CompletableFuture that completes as soon as any of the provided futures is completed.",
+      "The resulting CompletableFuture 'anyOfFuture' carries the result of whichever future completes first, regardless of whether 'future1' or 'future2' completes."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "HTTPURLConnection",
+    "patterns": ["HTTPURLConnection"],
+    "responses": ["import java.net.HttpURLConnection;\nimport java.net.URL;\nimport java.io.BufferedReader;\nimport java.io.InputStreamReader;\n\ntry {\n\tURL url = new URL(\"https://example.com\");\n\tHttpURLConnection conn = (HttpURLConnection) url.openConnection();\n\tconn.setRequestMethod(\"GET\");\n\tBufferedReader reader = new BufferedReader(new InputStreamReader(conn.getInputStream()));\n\tString line;\n\twhile ((line = reader.readLine()) != null) {\n\t\tSystem.out.println(line);\n\t}\n} catch (Exception e) {\n\te.printStackTrace();\n}\n"],
+    "explanations": [
+      "This code demonstrates how to make an HTTP GET request using HttpURLConnection in Java.",
+      "A URL object is created for the target URL ('https://example.com'). An HttpURLConnection is established using the URL, and the request method is set to 'GET'.",
+      "A BufferedReader is used to read the response from the connection's input stream, and each line of the response is printed. If an exception occurs during this process, it's caught, and the stack trace is printed."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "SocketServer",
+    "patterns": ["SocketServer"],
+    "responses": ["import java.io.IOException;\nimport java.net.ServerSocket;\nimport java.net.Socket;\n\ntry (ServerSocket serverSocket = new ServerSocket(8080)) {\n\twhile (true) {\n\t\tSocket socket = serverSocket.accept();\n\t\t// Handle socket connection\n\t}\n} catch (IOException e) {\n\te.printStackTrace();\n}\n"],
+    "explanations": [
+      "This code sets up a simple Socket Server that listens on port 8080. It uses a ServerSocket to accept incoming connections from clients. Upon accepting a connection, it creates a Socket object representing the connection, allowing data to be sent and received between the server and client.",
+      "The code uses a try-with-resources block to ensure proper handling of resources like ServerSocket. It continuously accepts client connections in a loop. When a client connects, a new Socket is created to represent that connection. The server can then perform actions on this socket, such as reading or writing data.",
+      "The IOException is caught to handle potential errors during socket communication. If an error occurs, the server prints the stack trace, aiding in diagnosing the issue."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "SocketClient",
+    "patterns": ["SocketClient"],
+    "responses": ["import java.io.IOException;\nimport java.net.Socket;\nimport java.io.OutputStream;\n\ntry (Socket socket = new Socket(\"localhost\", 8080)) {\n\tOutputStream outputStream = socket.getOutputStream();\n\toutputStream.write(\"Hello, Server!\".getBytes());\n} catch (IOException e) {\n\te.printStackTrace();\n}\n"],
+    "explanations": [
+      "This code creates a Socket Client that connects to a server running on \"localhost\" and port 8080. It establishes a connection and obtains an OutputStream from the socket. The code then writes the message 'Hello, Server!' to the server using the OutputStream.",
+      "Explanation 2: A try-with-resources block is used to manage the Socket instance, ensuring its proper closure. The OutputStream is used to send data to the server. In this case, the data is the UTF-8 encoded bytes of the message.",
+      "IOException is caught to handle potential errors during socket communication. If an error occurs, the client prints the stack trace, providing information about what went wrong."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "SerializationExternalizable",
+    "patterns": ["SerializationExternalizable"],
+    "responses": ["import java.io.Externalizable;\nimport java.io.ObjectOutput;\nimport java.io.ObjectInput;\nimport java.io.IOException;\n\nclass Person implements Externalizable {\n\tprivate String name;\n\n\tpublic void writeExternal(ObjectOutput out) throws IOException {\n\t\tout.writeObject(name);\n\t}\n\n\tpublic void readExternal(ObjectInput in) throws IOException, ClassNotFoundException {\n\t\tname = (String) in.readObject();\n\t}\n}\n"],
+    "explanations": [
+      "This code demonstrates serialization using the Externalizable interface. The 'Person' class implements Externalizable, giving control over how object serialization and deserialization occur. The writeExternal method writes the 'name' attribute to the ObjectOutputStream, and the readExternal method reads it back from the ObjectInputStream.",
+      "The writeExternal method allows customization of the serialization process. It writes the 'name' attribute to the output stream, which allows for efficient custom serialization logic. The readExternal method reads the serialized 'name' attribute and reconstructs the object during deserialization.",
+      "IOException and ClassNotFoundException are caught to handle potential errors during serialization and deserialization. These exceptions can occur if there's an issue reading or writing data or if the class being deserialized is not found in the classpath."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "JavaFXApplication",
+    "patterns": ["JavaFXApplication"],
+    "responses": ["import javafx.application.Application;\nimport javafx.stage.Stage;\nimport javafx.scene.Scene;\nimport javafx.scene.control.Label;\n\npublic class MyJavaFXApp extends Application {\n\tpublic void start(Stage primaryStage) {\n\t\tLabel label = new Label(\"Hello, JavaFX!\");\n\t\tScene scene = new Scene(label, 300, 200);\n\t\tprimaryStage.setScene(scene);\n\t\tprimaryStage.setTitle(\"JavaFX Application\");\n\t\tprimaryStage.show();\n\t}\n\tpublic static void main(String[] args) {\n\t\tlaunch(args);\n\t}\n}\n"],
+    "explanations": [
+      "This code sets up a basic JavaFX application by extending the 'Application' class. The 'start' method is overridden to define the UI layout, which includes a label with the text 'Hello, JavaFX!'. The 'main' method launches the JavaFX application.",
+      "The JavaFX framework provides the 'Application' class to manage the lifecycle of JavaFX applications. The 'start' method is where the main UI components are configured and displayed. In this case, a label is added to a scene and shown in a stage (window).",
+      "The 'launch' method is used to start the JavaFX application, and it initializes the JavaFX runtime. The UI components like labels and scenes are part of the JavaFX scene graph, and the framework takes care of rendering and event handling."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "JavaFXFXML",
+    "patterns": ["JavaFXFXML"],
+    "responses": ["<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<?import javafx.scene.control.*?>\n<?import javafx.scene.layout.*?>\n\n<VBox xmlns=\"http://javafx.com/javafx/16\" xmlns:fx=\"http://javafx.com/fxml/1\">\n\t<Label text=\"Hello, JavaFX!\" />\n</VBox>\n"],
+    "explanations": [
+        "This is an FXML file for defining a JavaFX UI layout. FXML is an XML-based format used to declaratively describe JavaFX user interfaces. In this case, a VBox layout is defined, containing a Label with the text 'Hello, JavaFX!'",
+        "FXML allows developers to separate UI layout from code. The provided XML defines the structure and components of the UI. The 'VBox' layout container arranges its children vertically, and the 'Label' is added as a child component.",
+        "The xmlns attributes define the namespaces for JavaFX and FXML. These namespaces provide access to JavaFX-specific elements and attributes. The 'text' attribute of the Label sets its displayed text."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "JavaFXEventHandling",
+    "patterns": ["JavaFXEventHandling"],
+    "responses": ["import javafx.application.Application;\nimport javafx.stage.Stage;\nimport javafx.scene.Scene;\nimport javafx.scene.control.Button;\nimport javafx.scene.control.Label;\nimport javafx.scene.layout.VBox;\nimport javafx.event.ActionEvent;\nimport javafx.event.EventHandler;\n\npublic class EventHandlingApp extends Application {\n\tpublic void start(Stage primaryStage) {\n\t\tButton button = new Button(\"Click Me\");\n\t\tLabel label = new Label();\n\n\t\tbutton.setOnAction(new EventHandler<ActionEvent>() {\n\t\t\tpublic void handle(ActionEvent event) {\n\t\t\t\tlabel.setText(\"Button Clicked\");\n\t\t\t}\n\t\t});\n\n\t\tVBox root = new VBox(button, label);\n\t\tScene scene = new Scene(root, 300, 200);\n\t\tprimaryStage.setScene(scene);\n\t\tprimaryStage.setTitle(\"Event Handling Example\");\n\t\tprimaryStage.show();\n\t}\n\n\tpublic static void main(String[] args) {\n\t\tlaunch(args);\n\t}\n}\n"],
+    "explanations": [
+      "The code sets up a JavaFX application with a button and a label. When the button is clicked, its associated event handler sets the text of the label to 'Button Clicked'.",
+      "This JavaFX code initializes a user interface with a button. When the button is clicked, the event handler changes the label's text to indicate that the button was clicked.",
+      "This JavaFX application demonstrates event handling. When the button is clicked, the event handler is triggered, updating the label's text."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "JavaFXCSS",
+    "patterns": ["JavaFXCSS"],
+    "responses": [".label {\n\t-fx-font-size: 20px;\n\t-fx-text-fill: blue;\n}\n"],
+    "explanations": [
+      "This CSS code defines a style for labels in a JavaFX application. It sets the font size to 20 pixels and the text color to blue.",
+      "The given CSS code snippet customizes the appearance of labels in a JavaFX application. It changes the font size to 20 pixels and the text color to blue.",
+      "In this CSS code, labels within a JavaFX application are styled with a 20-pixel font size and blue text color."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "JavaFXAnimation",
+    "patterns": ["JavaFXAnimation"],
+    "responses": ["import javafx.animation.TranslateTransition;\nimport javafx.application.Application;\nimport javafx.scene.Scene;\nimport javafx.scene.layout.StackPane;\nimport javafx.scene.shape.Rectangle;\nimport javafx.stage.Stage;\nimport javafx.util.Duration;\n\npublic class AnimationApp extends Application {\n\tpublic void start(Stage primaryStage) {\n\t\tRectangle rectangle = new Rectangle(50, 50, 100, 100);\n\t\tTranslateTransition transition = new TranslateTransition(Duration.seconds(2), rectangle);\n\t\ttransition.setToX(200);\n\t\ttransition.setAutoReverse(true);\n\t\ttransition.setCycleCount(TranslateTransition.INDEFINITE);\n\t\ttransition.play();\n\n\t\tStackPane root = new StackPane(rectangle);\n\t\tScene scene = new Scene(root, 400, 400);\n\t\tprimaryStage.setScene(scene);\n\t\tprimaryStage.setTitle(\"Animation Example\");\n\t\tprimaryStage.show();\n\t}\n\n\tpublic static void main(String[] args) {\n\t\tlaunch(args);\n\t}\n}\n"],
+    "explanations": [
+      "This JavaFX code snippet creates an animation where a rectangle moves horizontally. The 'TranslateTransition' class is used to control the animation's duration, distance, and behavior.",
+      "In this JavaFX animation example, a rectangle is animated to move horizontally. The 'TranslateTransition' class handles the animation settings and behavior.",
+      "The provided JavaFX code illustrates animation using the 'TranslateTransition' class. The rectangle moves horizontally, with auto-reversal and indefinite cycling."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "JavaFXChart",
+    "patterns": ["JavaFXChart"],
+    "responses": ["import javafx.application.Application;\nimport javafx.scene.Scene;\nimport javafx.scene.chart.BarChart;\nimport javafx.scene.chart.CategoryAxis;\nimport javafx.scene.chart.NumberAxis;\nimport javafx.scene.chart.XYChart;\nimport javafx.stage.Stage;\n\npublic class ChartApp extends Application {\n\tpublic void start(Stage primaryStage) {\n\t\tCategoryAxis xAxis = new CategoryAxis();\n\t\tNumberAxis yAxis = new NumberAxis();\n\t\tBarChart<String, Number> barChart = new BarChart<>(xAxis, yAxis);\n\n\t\tXYChart.Series<String, Number> series = new XYChart.Series<>();\n\t\tseries.getData().add(new XYChart.Data<>(\"Category 1\", 10));\n\t\tseries.getData().add(new XYChart.Data<>(\"Category 2\", 20));\n\n\t\tbarChart.getData().add(series);\n\t\tScene scene = new Scene(barChart, 400, 300);\n\t\tprimaryStage.setScene(scene);\n\t\tprimaryStage.setTitle(\"Chart Example\");\n\t\tprimaryStage.show();\n\t}\n\n\tpublic static void main(String[] args) {\n\t\tlaunch(args);\n\t}\n}\n"],
+    "explanations": [
+      "This JavaFX code creates a bar chart using the 'BarChart' class, populating it with data points in 'XYChart.Series'. The chart displays two categories with corresponding values.",
+      "In this JavaFX chart example, a bar chart is constructed using 'BarChart' and 'XYChart.Series'. The chart displays two categories with associated numerical values.",
+      "The provided JavaFX code generates a bar chart using 'BarChart' and 'XYChart.Series'. It showcases two categories with respective numeric values."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "ObjectSerialization",
+    "patterns": ["ObjectSerialization"],
+    "responses": ["import java.io.Serializable;\nimport java.io.FileOutputStream;\nimport java.io.ObjectOutputStream;\nimport java.io.FileInputStream;\nimport java.io.ObjectInputStream;\nimport java.io.IOException;\n\nclass MyClass implements Serializable {\n\tprivate int value;\n\t// Constructor, getters, and setters\n}\n\ntry (FileOutputStream fileOut = new FileOutputStream(\"object.ser\");\n\t\tObjectOutputStream objectOut = new ObjectOutputStream(fileOut)) {\n\tMyClass obj = new MyClass();\n\tobjectOut.writeObject(obj);\n} catch (IOException e) {\n\te.printStackTrace();\n}\n\ntry (FileInputStream fileIn = new FileInputStream(\"object.ser\");\n\t\tObjectInputStream objectIn = new ObjectInputStream(fileIn)) {\n\tMyClass obj = (MyClass) objectIn.readObject();\n} catch (IOException | ClassNotFoundException e) {\n\te.printStackTrace();\n}\n"],
+    "explanations": [
+      "This Java code snippet demonstrates object serialization. It defines a serializable class 'MyClass' with a value field. The code serializes an object of this class to a file and then deserializes it.",
+      "The provided Java code showcases object serialization. It includes a 'MyClass' class that implements Serializable and demonstrates the process of serializing and deserializing an object.",
+      "In this Java code, object serialization is illustrated. The 'MyClass' class is serialized into a file ('object.ser'), and later deserialized to retrieve the object."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "JDBCConnection",
+    "patterns": ["JDBCConnection"],
+    "responses": ["import java.sql.Connection;\nimport java.sql.DriverManager;\nimport java.sql.Statement;\nimport java.sql.ResultSet;\nimport java.sql.SQLException;\n\ntry {\n\tString url = \"jdbc:mysql://localhost:3306/mydb\";\n\tString user = \"username\";\n\tString password = \"password\";\n\tConnection connection = DriverManager.getConnection(url, user, password);\n\n\tStatement statement = connection.createStatement();\n\tString query = \"SELECT * FROM users\";\n\tResultSet resultSet = statement.executeQuery(query);\n\n\twhile (resultSet.next()) {\n\t\tint id = resultSet.getInt(\"id\");\n\t\tString name = resultSet.getString(\"name\");\n\t\tSystem.out.println(\"ID: \" + id + \", Name: \" + name);\n\t}\n\n\tconnection.close();\n} catch (SQLException e) {\n\te.printStackTrace();\n}\n"],
+    "explanations": [
+      "This code establishes a JDBC connection to a MySQL database using the provided URL, username, and password.",
+      "It creates a statement to execute an SQL query and retrieves the result set.",
+      "The code iterates through the result set and prints the ID and name of each user."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "JUnitTest",
+    "patterns": ["JUnitTest"],
+    "responses": ["import org.junit.jupiter.api.Test;\nimport static org.junit.jupiter.api.Assertions.*;\n\npublic class MyTest {\n\t@Test\n\tpublic void testAddition() {\n\t\tint result = Calculator.add(3, 5);\n\t\tassertEquals(8, result);\n\t}\n}\n"],
+    "explanations": [
+            "This code defines a JUnit test class using JUnit Jupiter.",
+            "It includes a test method that asserts the result of adding two numbers using the Calculator class.",
+            "The test ensures that the addition operation produces the expected result."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "JavaFXMediaPlayer",
+    "patterns": ["JavaFXMediaPlayer"],
+    "responses": ["import javafx.application.Application;\nimport javafx.scene.Scene;\nimport javafx.scene.media.Media;\nimport javafx.scene.media.MediaPlayer;\nimport javafx.stage.Stage;\n\npublic class MediaPlayerApp extends Application {\n\tpublic void start(Stage primaryStage) {\n\t\tString mediaFile = \"path/to/media.mp4\";\n\t\tMedia media = new Media(mediaFile);\n\t\tMediaPlayer mediaPlayer = new MediaPlayer(media);\n\t\tmediaPlayer.setAutoPlay(true);\n\n\t\tMediaView mediaView = new MediaView(mediaPlayer);\n\t\tScene scene = new Scene(new StackPane(mediaView), 800, 600);\n\n\t\tprimaryStage.setScene(scene);\n\t\tprimaryStage.setTitle(\"Media Player Example\");\n\t\tprimaryStage.show();\n\t}\n\n\tpublic static void main(String[] args) {\n\t\tlaunch(args);\n\t}\n}\n"],
+    "explanations": [
+      "This code demonstrates how to create a JavaFX media player application.",
+      "It loads a media file (e.g., video) and plays it automatically upon startup.",
+      "The media player is displayed in a JavaFX scene using a MediaView component."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "JavaFXWebview",
+    "patterns": ["JavaFXWebview"],
+    "responses": ["import javafx.application.Application;\nimport javafx.scene.Scene;\nimport javafx.scene.web.WebView;\nimport javafx.stage.Stage;\n\npublic class WebViewApp extends Application {\n\tpublic void start(Stage primaryStage) {\n\t\tWebView webView = new WebView();\n\t\twebView.getEngine().load(\"https://www.example.com\");\n\n\t\tScene scene = new Scene(webView, 800, 600);\n\n\t\tprimaryStage.setScene(scene);\n\t\tprimaryStage.setTitle(\"WebView Example\");\n\t\tprimaryStage.show();\n\t}\n\n\tpublic static void main(String[] args) {\n\t\tlaunch(args);\n\t}\n}\n"],
+    "explanations": [
+      "This code illustrates how to create a JavaFX WebView application.",
+      "It loads a web page (e.g., https://www.example.com) using the WebView component.",
+      "The loaded web content is displayed within a JavaFX scene in the application window."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "BasicAuthentication",
+    "patterns": ["BasicAuthentication"],
+    "responses": ["import java.net.HttpURLConnection;\nimport java.net.URL;\nimport java.io.BufferedReader;\nimport java.io.InputStreamReader;\nimport java.util.Base64;\n\ntry {\n\tString urlStr = \"https://api.example.com/data\";\n\tURL url = new URL(urlStr);\n\tHttpURLConnection conn = (HttpURLConnection) url.openConnection();\n\n\tString username = \"user\";\n\tString password = \"password\";\n\tString auth = username + \":\" + password;\n\tbyte[] encodedAuth = Base64.getEncoder().encode(auth.getBytes());\n\tString authHeaderValue = \"Basic \" + new String(encodedAuth);\n\tconn.setRequestProperty(\"Authorization\", authHeaderValue);\n\n\tBufferedReader reader = new BufferedReader(new InputStreamReader(conn.getInputStream()));\n\tString line;\n\twhile ((line = reader.readLine()) != null) {\n\t\tSystem.out.println(line);\n\t}\n} catch (Exception e) {\n\te.printStackTrace();\n}\n"],
+    "explanations": [
+      "This code demonstrates how to perform basic authentication when making an HTTP request.",
+      "It establishes an HTTP connection to a specified URL and sets the Authorization header with a base64-encoded username and password.",
+      "The code then reads and prints the response from the server, which is typically used to access secured APIs."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "RESTClientGet",
+    "patterns": ["RESTClientGet"],
+    "responses": [
+      "import javax.ws.rs.client.Client;\nimport javax.ws.rs.client.ClientBuilder;\nimport javax.ws.rs.core.MediaType;\n\npublic class RestClient {\n\tpublic static void main(String[] args) {\n\t\tString apiUrl = \"https://api.example.com/data\";\n\t\tClient client = ClientBuilder.newClient();\n\t\tString response = client\n\t\t\t.target(apiUrl)\n\t\t\t.request(MediaType.APPLICATION_JSON)\n\t\t\t.get(String.class);\n\t\tSystem.out.println(response);\n\t}\n}\n"
+    ],
+    "explanations": [
+      "This code snippet demonstrates how to perform an HTTP GET request using the JAX-RS API. It creates a REST client, sets the target URL, and requests data in JSON format. The obtained response is then printed to the console.",
+      "The provided code showcases the usage of JAX-RS Client API to perform a GET request on a specified API endpoint. It utilizes the MediaType.APPLICATION_JSON constant to indicate the desired response format.",
+      "The given code illustrates the process of creating a REST client and making an HTTP GET request. It utilizes JAX-RS Client API to send the request and retrieve a JSON response."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "RESTClientPost",
+    "patterns": ["RESTClientPost"],
+    "responses": [
+      "import javax.ws.rs.client.Client;\nimport javax.ws.rs.client.ClientBuilder;\nimport javax.ws.rs.client.Entity;\nimport javax.ws.rs.core.MediaType;\n\npublic class RestClient {\n\tpublic static void main(String[] args) {\n\t\tString apiUrl = \"https://api.example.com/data\";\n\t\tClient client = ClientBuilder.newClient();\n\t\tString requestBody = \"{\"key\": \"value\"}\";\n\t\tString response = client\n\t\t\t.target(apiUrl)\n\t\t\t.request(MediaType.APPLICATION_JSON)\n\t\t\t.post(Entity.json(requestBody), String.class);\n\t\tSystem.out.println(response);\n\t}\n}\n"
+    ],
+    "explanations": [
+      "This code snippet demonstrates an HTTP POST request using JAX-RS Client API. It sends a JSON payload to a specified URL and receives a JSON response, which is then printed to the console.",
+      "The provided code showcases how to utilize JAX-RS Client API to perform an HTTP POST request. It includes a JSON payload and extracts the resulting JSON response from the API.",
+      "The given code highlights the process of making an HTTP POST request using JAX-RS Client API. It sends a JSON payload and receives a JSON response that is printed to the console."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "JavaFXWebView",
+    "patterns": ["JavaFXWebView"],
+    "responses": ["import javafx.application.Application;\nimport javafx.scene.Scene;\nimport javafx.scene.web.WebEngine;\nimport javafx.scene.web.WebView;\nimport javafx.stage.Stage;\n\npublic class WebViewApp extends Application {\n\tpublic void start(Stage primaryStage) {\n\t\tWebView webView = new WebView();\n\t\tWebEngine webEngine = webView.getEngine();\n\t\twebEngine.load(\"https://www.example.com\");\n\n\t\tScene scene = new Scene(webView, 800, 600);\n\t\tprimaryStage.setScene(scene);\n\t\tprimaryStage.setTitle(\"WebView Example\");\n\t\tprimaryStage.show();\n\t}\n\n\tpublic static void main(String[] args) {\n\t\tlaunch(args);\n\t}\n}\n"
+    ],
+    "explanations": [
+      "This code creates a JavaFX application with a WebView component to display a web page. The WebEngine is used to load the specified URL ('https://www.example.com') within the WebView.",
+      "The provided code establishes a JavaFX application containing a WebView element. It loads the 'https://www.example.com' webpage using the WebEngine and displays it in a window.",
+      "The given code snippet demonstrates the usage of JavaFX's WebView to display a web page. It loads 'https://www.example.com' and renders it within the JavaFX application."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "JavaFXCSSStyling",
+    "patterns": ["JavaFXCSSStyling"],
+    "responses": [".button {\n\t-fx-background-color: #3498db;\n\t-fx-text-fill: white;\n}\n"
+    ],
+    "explanations": [
+      "This CSS snippet defines styling for a class named 'button' in a JavaFX application. It sets the background color to '#3498db' and the text color to white.",
+      "The provided CSS code offers styling instructions for a JavaFX application. It styles elements with the class 'button', applying a blue background and white text color.",
+      "The given CSS snippet provides styling rules for JavaFX elements with the class 'button'. It specifies a blue background and white text color for those elements."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "JavaFXDialog",
+    "patterns": ["JavaFXDialog"],
+    "responses": ["import javafx.application.Application;\nimport javafx.scene.Scene;\nimport javafx.scene.control.Alert;\nimport javafx.scene.control.ButtonType;\nimport javafx.stage.Stage;\n\npublic class DialogApp extends Application {\n\tpublic void start(Stage primaryStage) {\n\t\tButton showButton = new Button(\"Show Dialog\");\n\t\tshowButton.setOnAction(event -> {\n\t\t\tAlert alert = new Alert(Alert.AlertType.INFORMATION);\n\t\t\talert.setTitle(\"Information\");\n\t\t\talert.setHeaderText(null);\n\t\t\talert.setContentText(\"This is an information dialog.\");\n\t\t\talert.showAndWait();\n\t\t});\n\n\t\tScene scene = new Scene(new StackPane(showButton), 400, 300);\n\t\tprimaryStage.setScene(scene);\n\t\tprimaryStage.setTitle(\"Dialog Example\");\n\t\tprimaryStage.show();\n\t}\n\n\tpublic static void main(String[] args) {\n\t\tlaunch(args);\n\t}\n}\n"],
+    "explanations": [
+      "This JavaFX code creates an application with a button that, when clicked, displays an information dialog. The Alert class is used to create and show the dialog.",
+      "The provided code snippet demonstrates how to create an information dialog in JavaFX. When the button is clicked, an Alert dialog with the title 'Information' and content text is displayed.",
+      "The given code showcases the usage of JavaFX's Alert class to create and display an information dialog when the button is clicked. It sets the dialog's content text and title."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "JavaFXListView",
+    "patterns": ["JavaFXListView"],
+    "responses": ["import javafx.application.Application;\nimport javafx.scene.Scene;\nimport javafx.scene.control.ListView;\nimport javafx.scene.control.SelectionMode;\nimport javafx.stage.Stage;\n\npublic class ListViewApp extends Application {\n\tpublic void start(Stage primaryStage) {\n\t\tListView<String> listView = new ListView<>();\n\t\tlistView.getItems().addAll(\"Item 1\", \"Item 2\", \"Item 3\");\n\t\tlistView.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);\n\n\t\tScene scene = new Scene(listView, 300, 200);\n\t\tprimaryStage.setScene(scene);\n\t\tprimaryStage.setTitle(\"ListView Example\");\n\t\tprimaryStage.show();\n\t}\n\n\tpublic static void main(String[] args) {\n\t\tlaunch(args);\n\t}\n}\n"],
+    "explanations": [
+      "This response demonstrates how to create a JavaFX application with a ListView, which is a UI component for displaying a list of items.",
+      "The code imports necessary JavaFX classes and sets up a ListView with multiple selection mode. It then defines a Scene and displays it in a Stage (window).",
+      "The ListViewApp class extends Application and overrides the start method. It showcases the basic structure of a JavaFX application that uses a ListView."
+    ],
+    "context_set": "code"
+  },
+  {
+    "tag": "JavaFXTableView",
+    "patterns": ["JavaFXTableView"],
+    "responses": ["import javafx.application.Application;\nimport javafx.scene.Scene;\nimport javafx.scene.control.TableColumn;\nimport javafx.scene.control.TableView;\nimport javafx.scene.control.cell.PropertyValueFactory;\nimport javafx.stage.Stage;\n\npublic class TableViewApp extends Application {\n\tpublic void start(Stage primaryStage) {\n\t\tTableView<Person> tableView = new TableView<>();\n\t\tTableColumn<Person, String> firstNameColumn = new TableColumn<>(\"First Name\");\n\t\tTableColumn<Person, String> lastNameColumn = new TableColumn<>(\"Last Name\");\n\n\t\tfirstNameColumn.setCellValueFactory(new PropertyValueFactory<>(\"firstName\"));\n\t\tlastNameColumn.setCellValueFactory(new PropertyValueFactory<>(\"lastName\"));\n\n\t\ttableView.getColumns().addAll(firstNameColumn, lastNameColumn);\n\n\t\tScene scene = new Scene(tableView, 400, 300);\n\t\tprimaryStage.setScene(scene);\n\t\tprimaryStage.setTitle(\"TableView Example\");\n\t\tprimaryStage.show();\n\t}\n\n\tpublic static void main(String[] args) {\n\t\tlaunch(args);\n\t}\n}\n\nclass Person {\n\tprivate String firstName;\n\tprivate String lastName;\n\n\tpublic Person(String firstName, String lastName) {\n\t\tthis.firstName = firstName;\n\t\tthis.lastName = lastName;\n\t}\n\n\tpublic String getFirstName() {\n\t\treturn firstName;\n\t}\n\n\tpublic String getLastName() {\n\t\treturn lastName;\n\t}\n}\n"],
+    "explanations": [
+      "This response illustrates how to create a JavaFX application with a TableView, a UI component for displaying tabular data.",
+      "The code sets up a TableView with two TableColumn instances for first and last names. It uses PropertyValueFactory to bind data to columns.",
+      "The TableViewApp class extends Application, showing how to structure a JavaFX app with a TableView. The embedded Person class defines a simple data structure."
+    ],
+    "context_set": "code"
+    }
+  ]
+}
